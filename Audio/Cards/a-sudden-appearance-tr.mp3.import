@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/a-sudden-appearance-tr.mp3-ead11a383e931017d3a4e4c89b4b4647.mp3str"
+
+[deps]
+
+source_file="res://Audio/Cards/a-sudden-appearance-tr.mp3"
+dest_files=[ "res://.import/a-sudden-appearance-tr.mp3-ead11a383e931017d3a4e4c89b4b4647.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

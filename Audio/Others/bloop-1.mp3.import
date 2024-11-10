@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bloop-1.mp3-edfd099abd6874d44f89a7dbdcfe5327.mp3str"
+
+[deps]
+
+source_file="res://Audio/Others/bloop-1.mp3"
+dest_files=[ "res://.import/bloop-1.mp3-edfd099abd6874d44f89a7dbdcfe5327.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

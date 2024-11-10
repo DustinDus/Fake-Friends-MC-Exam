@@ -1,0 +1,1290 @@
+[gd_scene load_steps=80 format=2]
+
+[ext_resource path="res://Main_Scene/Main.gd" type="Script" id=1]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Player_Name.gd" type="Script" id=2]
+[ext_resource path="res://nano.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Main_Scene/Textures/Red_Scroller2.png" type="Texture" id=4]
+[ext_resource path="res://Main_Scene/Scripts/Red_Scroller.gd" type="Script" id=5]
+[ext_resource path="res://Main_Scene/Textures/Black_Scroller2.png" type="Texture" id=6]
+[ext_resource path="res://Main_Scene/Scripts/Black_Scroller.gd" type="Script" id=7]
+[ext_resource path="res://Main_Scene/Textures/Logo.png" type="Texture" id=8]
+[ext_resource path="res://Main_Scene/Textures/Utility Buttons/Settings2.png" type="Texture" id=9]
+[ext_resource path="res://Main_Scene/Textures/Utility Buttons/Settings_Hover2.png" type="Texture" id=10]
+[ext_resource path="res://Main_Scene/Textures/Utility Buttons/Settings_Pressed2.png" type="Texture" id=11]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Settings_Menu.gd" type="Script" id=12]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Profile_Menu.gd" type="Script" id=13]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Player_Title.gd" type="Script" id=14]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Scene_Cover.gd" type="Script" id=15]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Utility_Buttons_Main.gd" type="Script" id=16]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Title_List.gd" type="Script" id=17]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Player_Avatar.gd" type="Script" id=18]
+[ext_resource path="res://Unlockable_Stuff/Avatars/Anonymous_Player.png" type="Texture" id=19]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Avatar_List.gd" type="Script" id=20]
+[ext_resource path="res://Unlockable_Stuff/Avatars/Locked_Avatar.png" type="Texture" id=21]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Touch_Scroll.gd" type="Script" id=23]
+[ext_resource path="res://Main_Scene/Textures/Language Buttons/ItalianButton.png" type="Texture" id=24]
+[ext_resource path="res://Main_Scene/Textures/Language Buttons/EnglishButton.png" type="Texture" id=25]
+[ext_resource path="res://Main_Scene/Scripts/Language_Buttons/Language_Buttons.gd" type="Script" id=26]
+[ext_resource path="res://Main_Scene/Scripts/Language_Buttons/Scene_Cover.gd" type="Script" id=27]
+[ext_resource path="res://Main_Scene/Textures/Language Buttons/ItalianButton_Pressed.png" type="Texture" id=28]
+[ext_resource path="res://Main_Scene/Textures/Language Buttons/EnglishButton_Disabled.png" type="Texture" id=29]
+[ext_resource path="res://Main_Scene/Textures/Language Buttons/EnglishButton_Pressed.png" type="Texture" id=30]
+[ext_resource path="res://Main_Scene/Textures/Language Buttons/ItalianButton_Disabled.png" type="Texture" id=31]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Audio_Menu.gd" type="Script" id=32]
+[ext_resource path="res://Main_Scene/Textures/Sliders/Slider.png" type="Texture" id=33]
+[ext_resource path="res://Main_Scene/Textures/Sliders/Slider_Focus.png" type="Texture" id=34]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/AudioSlider.gd" type="Script" id=35]
+
+[sub_resource type="StyleBoxFlat" id=27]
+bg_color = Color( 0.862745, 0.862745, 0.862745, 1 )
+
+[sub_resource type="StyleBoxFlat" id=50]
+bg_color = Color( 0.243137, 0.243137, 0.243137, 1 )
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+
+[sub_resource type="StyleBoxFlat" id=30]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+corner_radius_top_left = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=28]
+bg_color = Color( 0.490196, 0.490196, 0.490196, 1 )
+corner_radius_top_left = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=29]
+size = 30
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=25]
+bg_color = Color( 0.0980392, 0.0980392, 0.0980392, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=26]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=31]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=32]
+bg_color = Color( 0.490196, 0.490196, 0.490196, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=39]
+bg_color = Color( 0.666667, 0.666667, 0.666667, 1 )
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="DynamicFont" id=33]
+size = 24
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 26
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 22
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=7]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=34]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=35]
+size = 22
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=41]
+size = 20
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=42]
+size = 20
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=40]
+size = 28
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=36]
+bg_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id=37]
+bg_color = Color( 1, 1, 1, 1 )
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="DynamicFont" id=38]
+size = 24
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=46]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+
+[sub_resource type="StyleBoxFlat" id=47]
+bg_color = Color( 0.490196, 0.490196, 0.490196, 1 )
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+
+[sub_resource type="StyleBoxFlat" id=49]
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=43]
+bg_color = Color( 0.8, 0.8, 0.8, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=44]
+size = 20
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=48]
+bg_color = Color( 0.4, 0.4, 0.4, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="DynamicFont" id=45]
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=54]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=51]
+size = 38
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=52]
+bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 30
+border_width_top = 30
+border_width_right = 30
+border_width_bottom = 30
+border_color = Color( 0.392157, 0.392157, 0.392157, 1 )
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+expand_margin_left = 30.0
+expand_margin_right = 30.0
+expand_margin_top = 25.0
+expand_margin_bottom = 25.0
+
+[sub_resource type="StyleBoxFlat" id=53]
+bg_color = Color( 0.882353, 0.882353, 0.882353, 1 )
+border_color = Color( 0.392157, 0.392157, 0.392157, 1 )
+corner_radius_top_left = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=24]
+bg_color = Color( 1, 0.588235, 0.588235, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0.784314, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.862745, 0.705882, 0.705882, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 1, 0, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=4]
+size = 40
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=20]
+bg_color = Color( 1, 1, 0.470588, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0.705882, 0.705882, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 1, 1, 0.627451, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.784314, 0.784314, 0, 1 )
+corner_radius_top_left = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=16]
+bg_color = Color( 0.588235, 0.588235, 1, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0, 0.705882, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.705882, 0.705882, 0.862745, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 1, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=18]
+bg_color = Color( 0.509804, 1, 0.509804, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0.705882, 0, 1 )
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.666667, 0.901961, 0.666667, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0.862745, 0, 1 )
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="Main" type="Control"]
+script = ExtResource( 1 )
+
+[node name="Background" type="ParallaxBackground" parent="."]
+
+[node name="Solid_Color" type="Panel" parent="Background"]
+margin_right = 1280.0
+margin_bottom = 720.0
+custom_styles/panel = SubResource( 27 )
+
+[node name="Red_Scroller" type="ParallaxLayer" parent="Background"]
+position = Vector2( 0, 40 )
+motion_mirroring = Vector2( 1280, 0 )
+script = ExtResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Background/Red_Scroller"]
+position = Vector2( 640, 0 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 4 )
+
+[node name="Black_Scroller" type="ParallaxLayer" parent="Background"]
+position = Vector2( 0, 685 )
+motion_mirroring = Vector2( 1280, 0 )
+script = ExtResource( 7 )
+
+[node name="Sprite" type="Sprite" parent="Background/Black_Scroller"]
+position = Vector2( 640, 0 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 6 )
+
+[node name="Language_Buttons" type="CanvasLayer" parent="."]
+script = ExtResource( 26 )
+
+[node name="Scene_Cover" type="Panel" parent="Language_Buttons"]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 1280.0
+margin_bottom = 720.0
+script = ExtResource( 27 )
+
+[node name="Language_Button" type="TextureButton" parent="Language_Buttons"]
+margin_left = 30.0
+margin_top = 100.0
+margin_right = 230.0
+margin_bottom = 300.0
+rect_scale = Vector2( 0.4, 0.4 )
+texture_normal = ExtResource( 25 )
+
+[node name="Language_Panel" type="Panel" parent="Language_Buttons"]
+visible = false
+margin_left = -150.0
+margin_top = 75.0
+margin_right = -10.0
+margin_bottom = 302.0
+custom_styles/panel = SubResource( 50 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Language_Buttons/Language_Panel"]
+margin_right = 350.0
+margin_bottom = 567.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_constants/margin_right = 75
+custom_constants/margin_top = 60
+custom_constants/margin_left = 75
+custom_constants/margin_bottom = 60
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Language_Buttons/Language_Panel/MarginContainer"]
+margin_left = 75.0
+margin_top = 60.0
+margin_right = 275.0
+margin_bottom = 507.0
+custom_constants/separation = 40
+
+[node name="English_Button" type="TextureButton" parent="Language_Buttons/Language_Panel/MarginContainer/VBoxContainer"]
+margin_right = 200.0
+margin_bottom = 200.0
+texture_normal = ExtResource( 25 )
+texture_pressed = ExtResource( 30 )
+texture_hover = ExtResource( 30 )
+texture_disabled = ExtResource( 29 )
+
+[node name="Italian_Button" type="TextureButton" parent="Language_Buttons/Language_Panel/MarginContainer/VBoxContainer"]
+margin_top = 240.0
+margin_right = 200.0
+margin_bottom = 440.0
+texture_normal = ExtResource( 24 )
+texture_pressed = ExtResource( 28 )
+texture_hover = ExtResource( 28 )
+texture_disabled = ExtResource( 31 )
+
+[node name="Utility_Buttons" type="CanvasLayer" parent="."]
+script = ExtResource( 16 )
+
+[node name="Settings" type="Control" parent="Utility_Buttons"]
+
+[node name="Scene_Cover" type="Panel" parent="Utility_Buttons/Settings"]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 1280.0
+margin_bottom = 720.0
+script = ExtResource( 15 )
+
+[node name="Settings_Button" type="TextureButton" parent="Utility_Buttons/Settings"]
+margin_left = 1170.0
+margin_top = 100.0
+margin_right = 1370.0
+margin_bottom = 300.0
+rect_scale = Vector2( 0.4, 0.4 )
+focus_mode = 0
+texture_normal = ExtResource( 9 )
+texture_pressed = ExtResource( 11 )
+texture_hover = ExtResource( 10 )
+texture_disabled = ExtResource( 9 )
+
+[node name="Settings_Menu" type="MarginContainer" parent="Utility_Buttons/Settings"]
+visible = false
+margin_left = 1280.0
+margin_right = 1530.0
+margin_bottom = 326.0
+custom_constants/margin_top = 70
+custom_constants/margin_bottom = 70
+script = ExtResource( 12 )
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Settings_Menu"]
+margin_top = 70.0
+margin_right = 250.0
+margin_bottom = 256.0
+custom_styles/panel = SubResource( 30 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Utility_Buttons/Settings/Settings_Menu/Panel"]
+margin_right = 250.0
+margin_bottom = 186.0
+custom_constants/margin_right = 0
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Settings_Menu/Panel/MarginContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 250.0
+margin_bottom = 176.0
+custom_styles/panel = SubResource( 28 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Utility_Buttons/Settings/Settings_Menu/Panel/MarginContainer/Panel"]
+margin_right = 240.0
+margin_bottom = 165.0
+custom_constants/margin_top = 20
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Utility_Buttons/Settings/Settings_Menu/Panel/MarginContainer/Panel/MarginContainer"]
+margin_left = 10.0
+margin_top = 20.0
+margin_right = 240.0
+margin_bottom = 145.0
+custom_constants/separation = 25
+
+[node name="Profile" type="Button" parent="Utility_Buttons/Settings/Settings_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer"]
+margin_right = 230.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 0, 50 )
+focus_mode = 0
+custom_fonts/font = SubResource( 29 )
+custom_styles/hover = SubResource( 25 )
+custom_styles/pressed = SubResource( 25 )
+custom_styles/normal = SubResource( 26 )
+text = "Profile"
+
+[node name="Audio" type="Button" parent="Utility_Buttons/Settings/Settings_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer"]
+margin_top = 75.0
+margin_right = 230.0
+margin_bottom = 125.0
+rect_min_size = Vector2( 0, 50 )
+focus_mode = 0
+custom_fonts/font = SubResource( 29 )
+custom_styles/hover = SubResource( 25 )
+custom_styles/pressed = SubResource( 25 )
+custom_styles/normal = SubResource( 26 )
+text = "Audio"
+
+[node name="Profile_Menu" type="MarginContainer" parent="Utility_Buttons/Settings"]
+visible = false
+margin_left = -500.0
+margin_top = 110.0
+margin_bottom = 610.0
+script = ExtResource( 13 )
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Profile_Menu"]
+margin_right = 500.0
+margin_bottom = 500.0
+custom_styles/panel = SubResource( 31 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Utility_Buttons/Settings/Profile_Menu/Panel"]
+margin_right = 500.0
+margin_bottom = 500.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 490.0
+margin_bottom = 490.0
+custom_styles/panel = SubResource( 32 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel"]
+margin_right = 480.0
+margin_bottom = 480.0
+custom_constants/margin_right = 25
+custom_constants/margin_top = 30
+custom_constants/margin_left = 25
+custom_constants/margin_bottom = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer"]
+margin_left = 25.0
+margin_top = 30.0
+margin_right = 455.0
+margin_bottom = 450.0
+custom_constants/separation = 30
+
+[node name="Player_Name" type="Control" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer"]
+margin_right = 430.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 430, 100 )
+script = ExtResource( 2 )
+
+[node name="Option_Panel" type="Panel" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Name"]
+margin_left = -5.0
+margin_top = -5.0
+margin_right = 435.0
+margin_bottom = 102.0
+custom_styles/panel = SubResource( 39 )
+
+[node name="Option_Name" type="Label" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Name"]
+margin_left = 4.0
+margin_top = 2.0
+margin_right = 142.0
+margin_bottom = 34.0
+custom_fonts/font = SubResource( 33 )
+text = "Username: "
+valign = 1
+
+[node name="Current_Name" type="Label" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Name"]
+margin_left = 142.0
+margin_top = 2.0
+margin_right = 417.0
+margin_bottom = 34.0
+custom_fonts/font = SubResource( 5 )
+text = "Player"
+
+[node name="Name_Input" type="LineEdit" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Name"]
+margin_left = 2.0
+margin_top = 40.0
+margin_right = 202.0
+margin_bottom = 76.0
+custom_fonts/font = SubResource( 6 )
+placeholder_text = "New Name Here"
+caret_blink = true
+caret_blink_speed = 0.5
+
+[node name="Change_Name" type="Button" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Name"]
+margin_left = 213.0
+margin_top = 43.0
+margin_right = 283.0
+margin_bottom = 73.0
+focus_mode = 0
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 7 )
+custom_styles/hover = SubResource( 25 )
+custom_styles/pressed = SubResource( 25 )
+custom_styles/normal = SubResource( 26 )
+text = "Change"
+
+[node name="Name_Error" type="Label" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Name"]
+visible = false
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 4.0
+margin_top = 79.0
+margin_right = 48.0
+margin_bottom = 98.0
+custom_fonts/font = SubResource( 34 )
+text = "Error"
+
+[node name="Player_Title" type="Control" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer"]
+margin_top = 130.0
+margin_right = 430.0
+margin_bottom = 230.0
+rect_min_size = Vector2( 430, 100 )
+script = ExtResource( 14 )
+
+[node name="Option_Panel" type="Panel" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Title"]
+margin_left = -5.0
+margin_top = -3.0
+margin_right = 435.0
+margin_bottom = 102.0
+custom_styles/panel = SubResource( 39 )
+
+[node name="Current_Title" type="Label" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Title"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 354.0
+margin_bottom = 36.0
+custom_fonts/font = SubResource( 5 )
+text = "Title: Certified Tryhard"
+
+[node name="Change_Title" type="Button" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Title"]
+margin_left = 4.0
+margin_top = 44.0
+margin_right = 94.0
+margin_bottom = 84.0
+focus_mode = 0
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 35 )
+custom_styles/hover = SubResource( 25 )
+custom_styles/pressed = SubResource( 25 )
+custom_styles/normal = SubResource( 26 )
+text = "Titles"
+
+[node name="How_Many_Titles" type="Label" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Title"]
+margin_left = 109.0
+margin_top = 41.0
+margin_right = 431.0
+margin_bottom = 65.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 41 )
+text = "Titles unlocked: ?/20"
+
+[node name="Comment" type="Label" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Title"]
+margin_left = 109.0
+margin_top = 62.0
+margin_right = 439.0
+margin_bottom = 84.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 42 )
+text = "Play online to unlock more"
+
+[node name="Player_Avatar" type="Control" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer"]
+margin_top = 260.0
+margin_right = 430.0
+margin_bottom = 360.0
+rect_min_size = Vector2( 430, 100 )
+script = ExtResource( 18 )
+
+[node name="Option_Panel" type="Panel" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Avatar"]
+margin_left = -5.0
+margin_top = -3.0
+margin_right = 435.0
+margin_bottom = 137.0
+custom_styles/panel = SubResource( 39 )
+
+[node name="Option_Name" type="Label" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Avatar"]
+margin_left = 6.0
+margin_top = 4.0
+margin_right = 127.0
+margin_bottom = 36.0
+custom_fonts/font = SubResource( 40 )
+text = "Avatar: "
+valign = 1
+
+[node name="Avatar_Border_1" type="Panel" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Avatar"]
+margin_left = 140.0
+margin_top = 5.0
+margin_right = 260.0
+margin_bottom = 125.0
+custom_styles/panel = SubResource( 36 )
+
+[node name="Avatar_Border_2" type="Panel" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Avatar/Avatar_Border_1"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 116.0
+margin_bottom = 116.0
+custom_styles/panel = SubResource( 37 )
+
+[node name="Sprite" type="Sprite" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Avatar/Avatar_Border_1/Avatar_Border_2"]
+position = Vector2( 56, 56 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 19 )
+
+[node name="Change_Avatar" type="Button" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Avatar"]
+margin_left = 4.0
+margin_top = 44.0
+margin_right = 124.0
+margin_bottom = 84.0
+focus_mode = 0
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 38 )
+custom_styles/hover = SubResource( 25 )
+custom_styles/pressed = SubResource( 25 )
+custom_styles/normal = SubResource( 26 )
+text = "Avatars"
+
+[node name="How_Many_Avatars" type="Label" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Avatar"]
+margin_left = 268.0
+margin_top = 7.0
+margin_right = 427.0
+margin_bottom = 70.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_constants/line_spacing = -1
+custom_fonts/font = SubResource( 41 )
+text = "Avatars unlocked: ?/20"
+align = 1
+autowrap = true
+
+[node name="Comment" type="Label" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Avatar"]
+margin_left = 268.0
+margin_top = 76.0
+margin_right = 427.0
+margin_bottom = 117.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_constants/line_spacing = -1
+custom_fonts/font = SubResource( 41 )
+text = "Play online to
+unlock more"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Title_List" type="MarginContainer" parent="Utility_Buttons/Settings"]
+visible = false
+margin_left = -352.0
+margin_top = 70.0
+margin_bottom = 650.0
+script = ExtResource( 17 )
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Title_List"]
+margin_right = 352.0
+margin_bottom = 580.0
+custom_styles/panel = SubResource( 46 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Utility_Buttons/Settings/Title_List/Panel"]
+margin_right = 353.0
+margin_bottom = 581.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_bottom = 10
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer"]
+margin_top = 10.0
+margin_right = 343.0
+margin_bottom = 571.0
+custom_styles/panel = SubResource( 47 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer/Panel"]
+margin_top = -10.0
+margin_right = 343.0
+margin_bottom = 570.0
+custom_constants/margin_right = 15
+custom_constants/margin_top = 30
+custom_constants/margin_left = 15
+custom_constants/margin_bottom = 30
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer/Panel/MarginContainer"]
+margin_left = 15.0
+margin_top = 30.0
+margin_right = 328.0
+margin_bottom = 550.0
+custom_styles/panel = SubResource( 49 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer/Panel/MarginContainer"]
+margin_left = 15.0
+margin_top = 30.0
+margin_right = 328.0
+margin_bottom = 550.0
+mouse_filter = 1
+script = ExtResource( 23 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer"]
+margin_right = 313.0
+margin_bottom = 520.0
+mouse_filter = 1
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 303.0
+margin_bottom = 510.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 30
+
+[node name="Unlocked_Panel" type="Panel" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+visible = false
+margin_right = 293.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 0, 60 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 43 )
+
+[node name="Button" type="Button" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Unlocked_Panel"]
+margin_left = 14.0
+margin_top = 10.0
+margin_right = 266.0
+margin_bottom = 50.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 44 )
+custom_styles/hover = SubResource( 25 )
+custom_styles/pressed = SubResource( 25 )
+custom_styles/focus = SubResource( 25 )
+custom_styles/disabled = SubResource( 25 )
+custom_styles/normal = SubResource( 26 )
+text = "Anonymous Player"
+
+[node name="Locked_Panel" type="Panel" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+visible = false
+margin_right = 293.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 0, 100 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 43 )
+
+[node name="Button" type="Button" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Locked_Panel"]
+margin_left = 14.0
+margin_top = 11.0
+margin_right = 266.0
+margin_bottom = 51.0
+focus_mode = 0
+mouse_filter = 1
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 44 )
+custom_styles/disabled = SubResource( 48 )
+disabled = true
+text = "???"
+
+[node name="Label" type="Label" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Locked_Panel"]
+margin_left = 3.0
+margin_top = 55.0
+margin_right = 280.0
+margin_bottom = 96.0
+mouse_filter = 1
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 45 )
+text = "Play fewer Red Cards than other players and still win"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Avatar_List" type="MarginContainer" parent="Utility_Buttons/Settings"]
+visible = false
+margin_left = -352.0
+margin_top = 70.0
+margin_bottom = 650.0
+script = ExtResource( 20 )
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Avatar_List"]
+margin_right = 352.0
+margin_bottom = 580.0
+custom_styles/panel = SubResource( 46 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Utility_Buttons/Settings/Avatar_List/Panel"]
+margin_right = 353.0
+margin_bottom = 581.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_bottom = 10
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer"]
+margin_top = 10.0
+margin_right = 343.0
+margin_bottom = 571.0
+custom_styles/panel = SubResource( 47 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel"]
+margin_top = -10.0
+margin_right = 343.0
+margin_bottom = 570.0
+custom_constants/margin_right = 15
+custom_constants/margin_top = 30
+custom_constants/margin_left = 15
+custom_constants/margin_bottom = 30
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer"]
+margin_left = 15.0
+margin_top = 30.0
+margin_right = 328.0
+margin_bottom = 550.0
+custom_styles/panel = SubResource( 49 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer"]
+margin_left = 15.0
+margin_top = 30.0
+margin_right = 328.0
+margin_bottom = 550.0
+script = ExtResource( 23 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer"]
+margin_right = 313.0
+margin_bottom = 520.0
+mouse_filter = 1
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 303.0
+margin_bottom = 510.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 30
+
+[node name="Unlocked_Panel" type="Panel" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+visible = false
+margin_right = 293.0
+margin_bottom = 130.0
+rect_min_size = Vector2( 0, 130 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 43 )
+
+[node name="Avatar_Border_1" type="Panel" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Unlocked_Panel"]
+margin_left = 142.0
+margin_top = 5.0
+margin_right = 262.0
+margin_bottom = 125.0
+mouse_filter = 1
+custom_styles/panel = SubResource( 36 )
+
+[node name="Avatar_Border_2" type="Panel" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Unlocked_Panel/Avatar_Border_1"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 116.0
+margin_bottom = 116.0
+mouse_filter = 1
+custom_styles/panel = SubResource( 37 )
+
+[node name="Sprite" type="Sprite" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Unlocked_Panel/Avatar_Border_1/Avatar_Border_2"]
+position = Vector2( 56, 56 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 19 )
+
+[node name="Button" type="Button" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Unlocked_Panel"]
+margin_left = 20.0
+margin_top = 45.0
+margin_right = 124.0
+margin_bottom = 85.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 44 )
+custom_styles/hover = SubResource( 25 )
+custom_styles/pressed = SubResource( 25 )
+custom_styles/focus = SubResource( 25 )
+custom_styles/disabled = SubResource( 25 )
+custom_styles/normal = SubResource( 26 )
+text = "Change"
+
+[node name="Locked_Panel" type="Panel" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+visible = false
+margin_right = 293.0
+margin_bottom = 130.0
+rect_min_size = Vector2( 0, 130 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 43 )
+
+[node name="Avatar_Border_1" type="Panel" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Locked_Panel"]
+margin_left = 142.0
+margin_top = 5.0
+margin_right = 262.0
+margin_bottom = 125.0
+mouse_filter = 1
+custom_styles/panel = SubResource( 36 )
+
+[node name="Avatar_Border_2" type="Panel" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Locked_Panel/Avatar_Border_1"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 116.0
+margin_bottom = 116.0
+mouse_filter = 1
+custom_styles/panel = SubResource( 37 )
+
+[node name="Sprite" type="Sprite" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Locked_Panel/Avatar_Border_1/Avatar_Border_2"]
+position = Vector2( 56, 56 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 21 )
+
+[node name="Label" type="Label" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Locked_Panel"]
+margin_left = 18.0
+margin_right = 126.0
+margin_bottom = 130.0
+mouse_filter = 1
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 45 )
+text = "Unlocked at the start"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Audio_Menu" type="MarginContainer" parent="Utility_Buttons/Settings"]
+visible = false
+margin_left = -500.0
+margin_top = 110.0
+margin_bottom = 610.0
+script = ExtResource( 32 )
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Audio_Menu"]
+margin_right = 500.0
+margin_bottom = 500.0
+custom_styles/panel = SubResource( 31 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Utility_Buttons/Settings/Audio_Menu/Panel"]
+margin_right = 500.0
+margin_bottom = 500.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 490.0
+margin_bottom = 490.0
+custom_styles/panel = SubResource( 32 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer/Panel"]
+margin_right = 480.0
+margin_bottom = 480.0
+custom_constants/margin_right = 25
+custom_constants/margin_top = 25
+custom_constants/margin_left = 25
+custom_constants/margin_bottom = 25
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer/Panel/MarginContainer"]
+margin_left = 25.0
+margin_top = 25.0
+margin_right = 455.0
+margin_bottom = 455.0
+custom_styles/panel = SubResource( 54 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer/Panel/MarginContainer"]
+margin_left = 25.0
+margin_top = 25.0
+margin_right = 455.0
+margin_bottom = 455.0
+custom_constants/separation = 20
+
+[node name="Master" type="Control" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer"]
+margin_right = 430.0
+margin_bottom = 130.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Master"]
+margin_left = 20.0
+margin_top = 15.0
+margin_right = 198.0
+margin_bottom = 58.0
+custom_fonts/font = SubResource( 51 )
+text = "Master"
+
+[node name="HSlider" type="HSlider" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Master"]
+margin_left = 32.0
+margin_top = 60.0
+margin_right = 1142.0
+margin_bottom = 260.0
+rect_scale = Vector2( 0.33, 0.33 )
+focus_mode = 0
+custom_icons/grabber_highlight = ExtResource( 34 )
+custom_icons/grabber = ExtResource( 33 )
+custom_styles/slider = SubResource( 52 )
+custom_styles/grabber_area_highlight = SubResource( 53 )
+custom_styles/grabber_area = SubResource( 53 )
+max_value = 1.0
+step = 0.001
+script = ExtResource( 35 )
+
+[node name="Music" type="Control" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer"]
+margin_top = 150.0
+margin_right = 430.0
+margin_bottom = 280.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Music"]
+margin_left = 20.0
+margin_top = 10.0
+margin_right = 198.0
+margin_bottom = 53.0
+custom_fonts/font = SubResource( 51 )
+text = "Music"
+
+[node name="HSlider" type="HSlider" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Music"]
+margin_left = 32.0
+margin_top = 55.0
+margin_right = 1142.0
+margin_bottom = 255.0
+rect_scale = Vector2( 0.33, 0.33 )
+focus_mode = 0
+custom_icons/grabber_highlight = ExtResource( 34 )
+custom_icons/grabber = ExtResource( 33 )
+custom_styles/slider = SubResource( 52 )
+custom_styles/grabber_area_highlight = SubResource( 53 )
+custom_styles/grabber_area = SubResource( 53 )
+max_value = 1.0
+step = 0.001
+script = ExtResource( 35 )
+
+[node name="Sound" type="Control" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer"]
+margin_top = 300.0
+margin_right = 430.0
+margin_bottom = 430.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Sound"]
+margin_left = 20.0
+margin_top = 5.0
+margin_right = 198.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 51 )
+text = "Sound"
+
+[node name="HSlider" type="HSlider" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Sound"]
+margin_left = 32.0
+margin_top = 50.0
+margin_right = 1142.0
+margin_bottom = 250.0
+rect_scale = Vector2( 0.33, 0.33 )
+focus_mode = 0
+custom_icons/grabber_highlight = ExtResource( 34 )
+custom_icons/grabber = ExtResource( 33 )
+custom_styles/slider = SubResource( 52 )
+custom_styles/grabber_area_highlight = SubResource( 53 )
+custom_styles/grabber_area = SubResource( 53 )
+max_value = 1.0
+step = 0.001
+script = ExtResource( 35 )
+
+[node name="Logo" type="Sprite" parent="."]
+position = Vector2( 642, 255 )
+scale = Vector2( 1.5, 1.55 )
+texture = ExtResource( 8 )
+
+[node name="Menu_Buttons" type="MarginContainer" parent="."]
+margin_left = 234.0
+margin_top = 450.0
+margin_right = 1049.0
+margin_bottom = 610.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu_Buttons"]
+margin_right = 815.0
+margin_bottom = 160.0
+custom_constants/separation = 15
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Menu_Buttons/VBoxContainer"]
+margin_right = 815.0
+margin_bottom = 160.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 15
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu_Buttons/VBoxContainer/HBoxContainer"]
+margin_right = 400.0
+margin_bottom = 160.0
+rect_min_size = Vector2( 400, 0 )
+custom_constants/separation = 15
+
+[node name="Play" type="Button" parent="Menu_Buttons/VBoxContainer/HBoxContainer/VBoxContainer"]
+margin_right = 400.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 0, 70 )
+focus_mode = 0
+custom_colors/font_color_disabled = Color( 0.862745, 0, 0, 1 )
+custom_colors/font_color_focus = Color( 0.784314, 0, 0, 1 )
+custom_colors/font_color = Color( 0.862745, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0.784314, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0.784314, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+custom_styles/hover = SubResource( 24 )
+custom_styles/pressed = SubResource( 24 )
+custom_styles/disabled = SubResource( 8 )
+custom_styles/normal = SubResource( 8 )
+text = "Play"
+
+[node name="Credits" type="Button" parent="Menu_Buttons/VBoxContainer/HBoxContainer/VBoxContainer"]
+margin_top = 85.0
+margin_right = 400.0
+margin_bottom = 155.0
+rect_min_size = Vector2( 0, 70 )
+focus_mode = 0
+custom_colors/font_color_disabled = Color( 0.823529, 0.823529, 0, 1 )
+custom_colors/font_color_focus = Color( 0.784314, 0.784314, 0, 1 )
+custom_colors/font_color = Color( 0.823529, 0.823529, 0, 1 )
+custom_colors/font_color_hover = Color( 0.784314, 0.784314, 0, 1 )
+custom_colors/font_color_pressed = Color( 0.784314, 0.784314, 0, 1 )
+custom_fonts/font = SubResource( 4 )
+custom_styles/hover = SubResource( 20 )
+custom_styles/pressed = SubResource( 20 )
+custom_styles/disabled = SubResource( 11 )
+custom_styles/normal = SubResource( 11 )
+text = "Credits"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Menu_Buttons/VBoxContainer/HBoxContainer"]
+margin_left = 415.0
+margin_right = 815.0
+margin_bottom = 160.0
+rect_min_size = Vector2( 400, 0 )
+custom_constants/separation = 15
+
+[node name="How_to_Play" type="Button" parent="Menu_Buttons/VBoxContainer/HBoxContainer/VBoxContainer2"]
+margin_right = 400.0
+margin_bottom = 70.0
+rect_min_size = Vector2( 0, 70 )
+focus_mode = 0
+custom_colors/font_color_disabled = Color( 0, 0, 0.862745, 1 )
+custom_colors/font_color_focus = Color( 0, 0, 0.784314, 1 )
+custom_colors/font_color = Color( 0, 0, 0.862745, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0.784314, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0.784314, 1 )
+custom_fonts/font = SubResource( 2 )
+custom_styles/hover = SubResource( 16 )
+custom_styles/pressed = SubResource( 16 )
+custom_styles/disabled = SubResource( 9 )
+custom_styles/normal = SubResource( 9 )
+text = "How to Play"
+
+[node name="My_Stats" type="Button" parent="Menu_Buttons/VBoxContainer/HBoxContainer/VBoxContainer2"]
+margin_top = 85.0
+margin_right = 400.0
+margin_bottom = 155.0
+rect_min_size = Vector2( 0, 70 )
+focus_mode = 0
+custom_colors/font_color_disabled = Color( 0, 0.862745, 0, 1 )
+custom_colors/font_color_focus = Color( 0, 0.784314, 0, 1 )
+custom_colors/font_color = Color( 0, 0.784314, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0.784314, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0.784314, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+custom_styles/hover = SubResource( 18 )
+custom_styles/pressed = SubResource( 18 )
+custom_styles/disabled = SubResource( 10 )
+custom_styles/normal = SubResource( 10 )
+text = "My Stats"
+
+[connection signal="pressed" from="Language_Buttons/Language_Button" to="Language_Buttons" method="_trigger_panel"]
+[connection signal="pressed" from="Language_Buttons/Language_Button" to="Language_Buttons/Scene_Cover" method="_cover_scene"]
+[connection signal="pressed" from="Language_Buttons/Language_Panel/MarginContainer/VBoxContainer/English_Button" to="." method="_translate" binds= [ 0 ]]
+[connection signal="pressed" from="Language_Buttons/Language_Panel/MarginContainer/VBoxContainer/English_Button" to="Language_Buttons" method="_change_language" binds= [ 0 ]]
+[connection signal="pressed" from="Language_Buttons/Language_Panel/MarginContainer/VBoxContainer/Italian_Button" to="." method="_translate" binds= [ 1 ]]
+[connection signal="pressed" from="Language_Buttons/Language_Panel/MarginContainer/VBoxContainer/Italian_Button" to="Language_Buttons" method="_change_language" binds= [ 1 ]]
+[connection signal="pressed" from="Utility_Buttons/Settings/Settings_Button" to="Utility_Buttons/Settings/Scene_Cover" method="_cover_scene"]
+[connection signal="pressed" from="Utility_Buttons/Settings/Settings_Button" to="Utility_Buttons/Settings/Settings_Menu" method="_Pull_Up_Settings"]
+[connection signal="pressed" from="Utility_Buttons/Settings/Settings_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Profile" to="Utility_Buttons/Settings/Profile_Menu" method="_Pull_Up_Profile"]
+[connection signal="pressed" from="Utility_Buttons/Settings/Settings_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Audio" to="Utility_Buttons/Settings/Audio_Menu" method="_Pull_Up_Audio"]
+[connection signal="pressed" from="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Name/Change_Name" to="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Name" method="change_name"]
+[connection signal="pressed" from="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Title/Change_Title" to="Utility_Buttons/Settings/Title_List" method="_pull_up"]
+[connection signal="pressed" from="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Avatar/Change_Avatar" to="Utility_Buttons/Settings/Avatar_List" method="_pull_up"]
+[connection signal="pressed" from="Menu_Buttons/VBoxContainer/HBoxContainer/VBoxContainer/Play" to="." method="_play"]
+[connection signal="pressed" from="Menu_Buttons/VBoxContainer/HBoxContainer/VBoxContainer/Credits" to="." method="_credits"]
+[connection signal="pressed" from="Menu_Buttons/VBoxContainer/HBoxContainer/VBoxContainer2/How_to_Play" to="." method="_how_to_play"]
+[connection signal="pressed" from="Menu_Buttons/VBoxContainer/HBoxContainer/VBoxContainer2/My_Stats" to="." method="_my_stats"]

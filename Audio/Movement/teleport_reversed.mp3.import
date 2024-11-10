@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/teleport_reversed.mp3-bb355ef7261f79e6165769bc331a9d6d.mp3str"
+
+[deps]
+
+source_file="res://Audio/Movement/teleport_reversed.mp3"
+dest_files=[ "res://.import/teleport_reversed.mp3-bb355ef7261f79e6165769bc331a9d6d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

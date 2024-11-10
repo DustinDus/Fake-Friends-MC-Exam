@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/parking-brake.mp3-1b411c94314cd8a073a7ce4eac4249ff.mp3str"
+
+[deps]
+
+source_file="res://Audio/Others/parking-brake.mp3"
+dest_files=[ "res://.import/parking-brake.mp3-1b411c94314cd8a073a7ce4eac4249ff.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

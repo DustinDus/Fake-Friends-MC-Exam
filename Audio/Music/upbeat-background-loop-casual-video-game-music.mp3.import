@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/upbeat-background-loop-casual-video-game-music.mp3-daf298add138799e2692c4ae4e8f686d.mp3str"
+
+[deps]
+
+source_file="res://Audio/Music/upbeat-background-loop-casual-video-game-music.mp3"
+dest_files=[ "res://.import/upbeat-background-loop-casual-video-game-music.mp3-daf298add138799e2692c4ae4e8f686d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

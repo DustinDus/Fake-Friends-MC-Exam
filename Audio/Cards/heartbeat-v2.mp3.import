@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/heartbeat-v2.mp3-570d348edfe148ef0dfff801c3247acc.mp3str"
+
+[deps]
+
+source_file="res://Audio/Cards/heartbeat-v2.mp3"
+dest_files=[ "res://.import/heartbeat-v2.mp3-570d348edfe148ef0dfff801c3247acc.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

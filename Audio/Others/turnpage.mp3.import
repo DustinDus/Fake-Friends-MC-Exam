@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/turnpage.mp3-e190834ee1245a62416f4a430478b5bd.mp3str"
+
+[deps]
+
+source_file="res://Audio/Others/turnpage.mp3"
+dest_files=[ "res://.import/turnpage.mp3-e190834ee1245a62416f4a430478b5bd.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

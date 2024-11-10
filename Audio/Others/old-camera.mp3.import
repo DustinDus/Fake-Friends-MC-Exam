@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/old-camera.mp3-234dacac7b2a4d6356c866fff08f60a7.mp3str"
+
+[deps]
+
+source_file="res://Audio/Others/old-camera.mp3"
+dest_files=[ "res://.import/old-camera.mp3-234dacac7b2a4d6356c866fff08f60a7.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

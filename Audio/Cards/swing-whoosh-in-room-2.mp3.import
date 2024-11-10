@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/swing-whoosh-in-room-2.mp3-d6540170fda4a9d9ff513a012ea949f6.mp3str"
+
+[deps]
+
+source_file="res://Audio/Cards/swing-whoosh-in-room-2.mp3"
+dest_files=[ "res://.import/swing-whoosh-in-room-2.mp3-d6540170fda4a9d9ff513a012ea949f6.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

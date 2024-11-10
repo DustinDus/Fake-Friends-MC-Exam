@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/cornflakes.mp3-307cab82abd38fe8e0c0e6629c877223.mp3str"
+
+[deps]
+
+source_file="res://Audio/Dice/cornflakes.mp3"
+dest_files=[ "res://.import/cornflakes.mp3-307cab82abd38fe8e0c0e6629c877223.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

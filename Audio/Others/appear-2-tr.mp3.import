@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/appear-2-tr.mp3-89110c9734844da259d6b273170bea7e.mp3str"
+
+[deps]
+
+source_file="res://Audio/Others/appear-2-tr.mp3"
+dest_files=[ "res://.import/appear-2-tr.mp3-89110c9734844da259d6b273170bea7e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,3018 @@
+[gd_scene load_steps=84 format=2]
+
+[ext_resource path="res://Main_Scene/Textures/Utility Buttons/Settings2.png" type="Texture" id=1]
+[ext_resource path="res://Main_Scene/Textures/Utility Buttons/Settings_Pressed2.png" type="Texture" id=2]
+[ext_resource path="res://Main_Scene/Textures/Utility Buttons/Settings_Hover2.png" type="Texture" id=3]
+[ext_resource path="res://Unlockable_Stuff/Avatars/Anonymous_Player.png" type="Texture" id=4]
+[ext_resource path="res://Play_Scene/Scripts/Utility_Buttons.gd" type="Script" id=5]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Scene_Cover.gd" type="Script" id=6]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Title_List.gd" type="Script" id=7]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Avatar_List.gd" type="Script" id=8]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Player_Avatar.gd" type="Script" id=9]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Touch_Scroll.gd" type="Script" id=10]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/AudioSlider.gd" type="Script" id=11]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Audio_Menu.gd" type="Script" id=12]
+[ext_resource path="res://Unlockable_Stuff/Avatars/Locked_Avatar.png" type="Texture" id=13]
+[ext_resource path="res://Main_Scene/Textures/Sliders/Slider.png" type="Texture" id=14]
+[ext_resource path="res://Main_Scene/Textures/Sliders/Slider_Focus.png" type="Texture" id=15]
+[ext_resource path="res://Main_Scene/Textures/Utility Buttons/Back_Pressed.png" type="Texture" id=16]
+[ext_resource path="res://Main_Scene/Textures/Utility Buttons/Back.png" type="Texture" id=17]
+[ext_resource path="res://Main_Scene/Textures/Utility Buttons/Back_Hover.png" type="Texture" id=18]
+[ext_resource path="res://nano.ttf" type="DynamicFontData" id=19]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Profile_Menu.gd" type="Script" id=20]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Player_Title.gd" type="Script" id=21]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Player_Name.gd" type="Script" id=22]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Settings_Menu.gd" type="Script" id=23]
+[ext_resource path="res://Credits_Scene/Credits.gd" type="Script" id=24]
+[ext_resource path="res://Game_Scene/Textures/FFTiles2.png" type="Texture" id=25]
+[ext_resource path="res://Card_Factory/Textures/RedBack.png" type="Texture" id=26]
+[ext_resource path="res://Card_Factory/Textures/OrangeBack.png" type="Texture" id=27]
+[ext_resource path="res://Card_Factory/Textures/BlackBack.png" type="Texture" id=28]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.784314, 0.784314, 0.784314, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+
+[sub_resource type="StyleBoxFlat" id=3]
+corner_radius_bottom_right = 1024
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id=4]
+corner_radius_bottom_left = 1024
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+corner_radius_top_left = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.490196, 0.490196, 0.490196, 1 )
+corner_radius_top_left = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=7]
+size = 30
+font_data = ExtResource( 19 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.0980392, 0.0980392, 0.0980392, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0.490196, 0.490196, 0.490196, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.666667, 0.666667, 0.666667, 1 )
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="DynamicFont" id=13]
+size = 24
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=14]
+size = 28
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=15]
+size = 22
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=16]
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=17]
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=18]
+size = 22
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=19]
+size = 20
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=20]
+size = 20
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=21]
+size = 28
+font_data = ExtResource( 19 )
+
+[sub_resource type="StyleBoxFlat" id=22]
+bg_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id=23]
+bg_color = Color( 1, 1, 1, 1 )
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="DynamicFont" id=24]
+size = 24
+font_data = ExtResource( 19 )
+
+[sub_resource type="StyleBoxFlat" id=25]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+
+[sub_resource type="StyleBoxFlat" id=26]
+bg_color = Color( 0.490196, 0.490196, 0.490196, 1 )
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+
+[sub_resource type="StyleBoxFlat" id=27]
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=28]
+bg_color = Color( 0.8, 0.8, 0.8, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=29]
+size = 20
+font_data = ExtResource( 19 )
+
+[sub_resource type="StyleBoxFlat" id=30]
+bg_color = Color( 0.0980392, 0.0980392, 0.0980392, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=31]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=32]
+bg_color = Color( 0.4, 0.4, 0.4, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="DynamicFont" id=33]
+font_data = ExtResource( 19 )
+
+[sub_resource type="StyleBoxFlat" id=34]
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=35]
+bg_color = Color( 0.8, 0.8, 0.8, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=36]
+bg_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id=37]
+bg_color = Color( 1, 1, 1, 1 )
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="DynamicFont" id=38]
+size = 20
+font_data = ExtResource( 19 )
+
+[sub_resource type="StyleBoxFlat" id=39]
+bg_color = Color( 0.0980392, 0.0980392, 0.0980392, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=40]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="DynamicFont" id=41]
+font_data = ExtResource( 19 )
+
+[sub_resource type="StyleBoxFlat" id=42]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=43]
+bg_color = Color( 0.490196, 0.490196, 0.490196, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=44]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=45]
+size = 38
+font_data = ExtResource( 19 )
+
+[sub_resource type="StyleBoxFlat" id=46]
+bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 30
+border_width_top = 30
+border_width_right = 30
+border_width_bottom = 30
+border_color = Color( 0.392157, 0.392157, 0.392157, 1 )
+corner_radius_top_left = 60
+corner_radius_top_right = 60
+corner_radius_bottom_right = 60
+corner_radius_bottom_left = 60
+expand_margin_left = 30.0
+expand_margin_right = 30.0
+expand_margin_top = 25.0
+expand_margin_bottom = 25.0
+
+[sub_resource type="StyleBoxFlat" id=47]
+bg_color = Color( 0.882353, 0.882353, 0.882353, 1 )
+border_color = Color( 0.392157, 0.392157, 0.392157, 1 )
+corner_radius_top_left = 30
+corner_radius_bottom_left = 30
+
+[sub_resource type="TileSet" id=53]
+0/name = "Only Top"
+0/texture = ExtResource( 25 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 128, 128, 128, 128 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "Only Rx"
+1/texture = ExtResource( 25 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 384, 128, 128, 128 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "Only Bot"
+2/texture = ExtResource( 25 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 640, 128, 128, 128 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "Only Lx"
+3/texture = ExtResource( 25 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 896, 128, 128, 128 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "Str Vert"
+4/texture = ExtResource( 25 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 1152, 128, 128, 128 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "Str Hori"
+5/texture = ExtResource( 25 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 1408, 128, 128, 128 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "Angle Bot Lx"
+6/texture = ExtResource( 25 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 1664, 128, 128, 128 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+7/name = "Angle Top Lx"
+7/texture = ExtResource( 25 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 1920, 128, 128, 128 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
+8/name = "Angle Top Rx"
+8/texture = ExtResource( 25 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 2176, 128, 128, 128 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape_one_way = false
+8/shape_one_way_margin = 0.0
+8/shapes = [  ]
+8/z_index = 0
+9/name = "Angle Bot Rx"
+9/texture = ExtResource( 25 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 2432, 128, 128, 128 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+
+[sub_resource type="TileSet" id=54]
+0/name = "0"
+0/texture = ExtResource( 25 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 4352, 640, 128, 128 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "1"
+1/texture = ExtResource( 25 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 128, 640, 128, 128 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "2"
+2/texture = ExtResource( 25 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 256, 640, 128, 128 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "3"
+3/texture = ExtResource( 25 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 384, 640, 128, 128 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "4"
+4/texture = ExtResource( 25 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 512, 640, 128, 128 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "5"
+5/texture = ExtResource( 25 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 640, 640, 128, 128 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "6"
+6/texture = ExtResource( 25 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 768, 640, 128, 128 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+7/name = "7"
+7/texture = ExtResource( 25 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 896, 640, 128, 128 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
+8/name = "8"
+8/texture = ExtResource( 25 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 1024, 640, 128, 128 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape_one_way = false
+8/shape_one_way_margin = 0.0
+8/shapes = [  ]
+8/z_index = 0
+9/name = "9"
+9/texture = ExtResource( 25 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 1152, 640, 128, 128 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+10/name = "10"
+10/texture = ExtResource( 25 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 1280, 640, 128, 128 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape_one_way = false
+10/shape_one_way_margin = 0.0
+10/shapes = [  ]
+10/z_index = 0
+11/name = "11"
+11/texture = ExtResource( 25 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 1408, 640, 128, 128 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape_one_way = false
+11/shape_one_way_margin = 0.0
+11/shapes = [  ]
+11/z_index = 0
+12/name = "12"
+12/texture = ExtResource( 25 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 1536, 640, 128, 128 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 0, 0 )
+12/navigation_offset = Vector2( 0, 0 )
+12/shape_offset = Vector2( 0, 0 )
+12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+12/shape_one_way = false
+12/shape_one_way_margin = 0.0
+12/shapes = [  ]
+12/z_index = 0
+13/name = "13"
+13/texture = ExtResource( 25 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 1664, 640, 128, 128 )
+13/tile_mode = 0
+13/occluder_offset = Vector2( 0, 0 )
+13/navigation_offset = Vector2( 0, 0 )
+13/shape_offset = Vector2( 0, 0 )
+13/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+13/shape_one_way = false
+13/shape_one_way_margin = 0.0
+13/shapes = [  ]
+13/z_index = 0
+14/name = "14"
+14/texture = ExtResource( 25 )
+14/tex_offset = Vector2( 0, 0 )
+14/modulate = Color( 1, 1, 1, 1 )
+14/region = Rect2( 1792, 640, 128, 128 )
+14/tile_mode = 0
+14/occluder_offset = Vector2( 0, 0 )
+14/navigation_offset = Vector2( 0, 0 )
+14/shape_offset = Vector2( 0, 0 )
+14/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+14/shape_one_way = false
+14/shape_one_way_margin = 0.0
+14/shapes = [  ]
+14/z_index = 0
+15/name = "15"
+15/texture = ExtResource( 25 )
+15/tex_offset = Vector2( 0, 0 )
+15/modulate = Color( 1, 1, 1, 1 )
+15/region = Rect2( 1920, 640, 128, 128 )
+15/tile_mode = 0
+15/occluder_offset = Vector2( 0, 0 )
+15/navigation_offset = Vector2( 0, 0 )
+15/shape_offset = Vector2( 0, 0 )
+15/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+15/shape_one_way = false
+15/shape_one_way_margin = 0.0
+15/shapes = [  ]
+15/z_index = 0
+16/name = "16"
+16/texture = ExtResource( 25 )
+16/tex_offset = Vector2( 0, 0 )
+16/modulate = Color( 1, 1, 1, 1 )
+16/region = Rect2( 2048, 640, 128, 128 )
+16/tile_mode = 0
+16/occluder_offset = Vector2( 0, 0 )
+16/navigation_offset = Vector2( 0, 0 )
+16/shape_offset = Vector2( 0, 0 )
+16/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+16/shape_one_way = false
+16/shape_one_way_margin = 0.0
+16/shapes = [  ]
+16/z_index = 0
+17/name = "17"
+17/texture = ExtResource( 25 )
+17/tex_offset = Vector2( 0, 0 )
+17/modulate = Color( 1, 1, 1, 1 )
+17/region = Rect2( 2176, 640, 128, 128 )
+17/tile_mode = 0
+17/occluder_offset = Vector2( 0, 0 )
+17/navigation_offset = Vector2( 0, 0 )
+17/shape_offset = Vector2( 0, 0 )
+17/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+17/shape_one_way = false
+17/shape_one_way_margin = 0.0
+17/shapes = [  ]
+17/z_index = 0
+18/name = "18"
+18/texture = ExtResource( 25 )
+18/tex_offset = Vector2( 0, 0 )
+18/modulate = Color( 1, 1, 1, 1 )
+18/region = Rect2( 2304, 640, 128, 128 )
+18/tile_mode = 0
+18/occluder_offset = Vector2( 0, 0 )
+18/navigation_offset = Vector2( 0, 0 )
+18/shape_offset = Vector2( 0, 0 )
+18/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+18/shape_one_way = false
+18/shape_one_way_margin = 0.0
+18/shapes = [  ]
+18/z_index = 0
+19/name = "19"
+19/texture = ExtResource( 25 )
+19/tex_offset = Vector2( 0, 0 )
+19/modulate = Color( 1, 1, 1, 1 )
+19/region = Rect2( 2432, 640, 128, 128 )
+19/tile_mode = 0
+19/occluder_offset = Vector2( 0, 0 )
+19/navigation_offset = Vector2( 0, 0 )
+19/shape_offset = Vector2( 0, 0 )
+19/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+19/shape_one_way = false
+19/shape_one_way_margin = 0.0
+19/shapes = [  ]
+19/z_index = 0
+20/name = "20"
+20/texture = ExtResource( 25 )
+20/tex_offset = Vector2( 0, 0 )
+20/modulate = Color( 1, 1, 1, 1 )
+20/region = Rect2( 2560, 640, 128, 128 )
+20/tile_mode = 0
+20/occluder_offset = Vector2( 0, 0 )
+20/navigation_offset = Vector2( 0, 0 )
+20/shape_offset = Vector2( 0, 0 )
+20/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+20/shape_one_way = false
+20/shape_one_way_margin = 0.0
+20/shapes = [  ]
+20/z_index = 0
+21/name = "21"
+21/texture = ExtResource( 25 )
+21/tex_offset = Vector2( 0, 0 )
+21/modulate = Color( 1, 1, 1, 1 )
+21/region = Rect2( 2688, 640, 128, 128 )
+21/tile_mode = 0
+21/occluder_offset = Vector2( 0, 0 )
+21/navigation_offset = Vector2( 0, 0 )
+21/shape_offset = Vector2( 0, 0 )
+21/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+21/shape_one_way = false
+21/shape_one_way_margin = 0.0
+21/shapes = [  ]
+21/z_index = 0
+22/name = "22"
+22/texture = ExtResource( 25 )
+22/tex_offset = Vector2( 0, 0 )
+22/modulate = Color( 1, 1, 1, 1 )
+22/region = Rect2( 2816, 640, 128, 128 )
+22/tile_mode = 0
+22/occluder_offset = Vector2( 0, 0 )
+22/navigation_offset = Vector2( 0, 0 )
+22/shape_offset = Vector2( 0, 0 )
+22/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+22/shape_one_way = false
+22/shape_one_way_margin = 0.0
+22/shapes = [  ]
+22/z_index = 0
+23/name = "23"
+23/texture = ExtResource( 25 )
+23/tex_offset = Vector2( 0, 0 )
+23/modulate = Color( 1, 1, 1, 1 )
+23/region = Rect2( 2944, 640, 128, 128 )
+23/tile_mode = 0
+23/occluder_offset = Vector2( 0, 0 )
+23/navigation_offset = Vector2( 0, 0 )
+23/shape_offset = Vector2( 0, 0 )
+23/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+23/shape_one_way = false
+23/shape_one_way_margin = 0.0
+23/shapes = [  ]
+23/z_index = 0
+24/name = "24"
+24/texture = ExtResource( 25 )
+24/tex_offset = Vector2( 0, 0 )
+24/modulate = Color( 1, 1, 1, 1 )
+24/region = Rect2( 3072, 640, 128, 128 )
+24/tile_mode = 0
+24/occluder_offset = Vector2( 0, 0 )
+24/navigation_offset = Vector2( 0, 0 )
+24/shape_offset = Vector2( 0, 0 )
+24/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+24/shape_one_way = false
+24/shape_one_way_margin = 0.0
+24/shapes = [  ]
+24/z_index = 0
+25/name = "25"
+25/texture = ExtResource( 25 )
+25/tex_offset = Vector2( 0, 0 )
+25/modulate = Color( 1, 1, 1, 1 )
+25/region = Rect2( 3200, 640, 128, 128 )
+25/tile_mode = 0
+25/occluder_offset = Vector2( 0, 0 )
+25/navigation_offset = Vector2( 0, 0 )
+25/shape_offset = Vector2( 0, 0 )
+25/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+25/shape_one_way = false
+25/shape_one_way_margin = 0.0
+25/shapes = [  ]
+25/z_index = 0
+26/name = "26"
+26/texture = ExtResource( 25 )
+26/tex_offset = Vector2( 0, 0 )
+26/modulate = Color( 1, 1, 1, 1 )
+26/region = Rect2( 3328, 640, 128, 128 )
+26/tile_mode = 0
+26/occluder_offset = Vector2( 0, 0 )
+26/navigation_offset = Vector2( 0, 0 )
+26/shape_offset = Vector2( 0, 0 )
+26/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+26/shape_one_way = false
+26/shape_one_way_margin = 0.0
+26/shapes = [  ]
+26/z_index = 0
+27/name = "27"
+27/texture = ExtResource( 25 )
+27/tex_offset = Vector2( 0, 0 )
+27/modulate = Color( 1, 1, 1, 1 )
+27/region = Rect2( 3456, 640, 128, 128 )
+27/tile_mode = 0
+27/occluder_offset = Vector2( 0, 0 )
+27/navigation_offset = Vector2( 0, 0 )
+27/shape_offset = Vector2( 0, 0 )
+27/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+27/shape_one_way = false
+27/shape_one_way_margin = 0.0
+27/shapes = [  ]
+27/z_index = 0
+28/name = "28"
+28/texture = ExtResource( 25 )
+28/tex_offset = Vector2( 0, 0 )
+28/modulate = Color( 1, 1, 1, 1 )
+28/region = Rect2( 3584, 640, 128, 128 )
+28/tile_mode = 0
+28/occluder_offset = Vector2( 0, 0 )
+28/navigation_offset = Vector2( 0, 0 )
+28/shape_offset = Vector2( 0, 0 )
+28/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+28/shape_one_way = false
+28/shape_one_way_margin = 0.0
+28/shapes = [  ]
+28/z_index = 0
+29/name = "29"
+29/texture = ExtResource( 25 )
+29/tex_offset = Vector2( 0, 0 )
+29/modulate = Color( 1, 1, 1, 1 )
+29/region = Rect2( 3712, 640, 128, 128 )
+29/tile_mode = 0
+29/occluder_offset = Vector2( 0, 0 )
+29/navigation_offset = Vector2( 0, 0 )
+29/shape_offset = Vector2( 0, 0 )
+29/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+29/shape_one_way = false
+29/shape_one_way_margin = 0.0
+29/shapes = [  ]
+29/z_index = 0
+30/name = "30"
+30/texture = ExtResource( 25 )
+30/tex_offset = Vector2( 0, 0 )
+30/modulate = Color( 1, 1, 1, 1 )
+30/region = Rect2( 3840, 640, 128, 128 )
+30/tile_mode = 0
+30/occluder_offset = Vector2( 0, 0 )
+30/navigation_offset = Vector2( 0, 0 )
+30/shape_offset = Vector2( 0, 0 )
+30/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+30/shape_one_way = false
+30/shape_one_way_margin = 0.0
+30/shapes = [  ]
+30/z_index = 0
+31/name = "31"
+31/texture = ExtResource( 25 )
+31/tex_offset = Vector2( 0, 0 )
+31/modulate = Color( 1, 1, 1, 1 )
+31/region = Rect2( 3968, 640, 128, 128 )
+31/tile_mode = 0
+31/occluder_offset = Vector2( 0, 0 )
+31/navigation_offset = Vector2( 0, 0 )
+31/shape_offset = Vector2( 0, 0 )
+31/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+31/shape_one_way = false
+31/shape_one_way_margin = 0.0
+31/shapes = [  ]
+31/z_index = 0
+32/name = "32"
+32/texture = ExtResource( 25 )
+32/tex_offset = Vector2( 0, 0 )
+32/modulate = Color( 1, 1, 1, 1 )
+32/region = Rect2( 4096, 640, 128, 128 )
+32/tile_mode = 0
+32/occluder_offset = Vector2( 0, 0 )
+32/navigation_offset = Vector2( 0, 0 )
+32/shape_offset = Vector2( 0, 0 )
+32/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+32/shape_one_way = false
+32/shape_one_way_margin = 0.0
+32/shapes = [  ]
+32/z_index = 0
+33/name = "33"
+33/texture = ExtResource( 25 )
+33/tex_offset = Vector2( 0, 0 )
+33/modulate = Color( 1, 1, 1, 1 )
+33/region = Rect2( 128, 768, 128, 128 )
+33/tile_mode = 0
+33/occluder_offset = Vector2( 0, 0 )
+33/navigation_offset = Vector2( 0, 0 )
+33/shape_offset = Vector2( 0, 0 )
+33/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+33/shape_one_way = false
+33/shape_one_way_margin = 0.0
+33/shapes = [  ]
+33/z_index = 0
+34/name = "34"
+34/texture = ExtResource( 25 )
+34/tex_offset = Vector2( 0, 0 )
+34/modulate = Color( 1, 1, 1, 1 )
+34/region = Rect2( 256, 768, 128, 128 )
+34/tile_mode = 0
+34/occluder_offset = Vector2( 0, 0 )
+34/navigation_offset = Vector2( 0, 0 )
+34/shape_offset = Vector2( 0, 0 )
+34/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+34/shape_one_way = false
+34/shape_one_way_margin = 0.0
+34/shapes = [  ]
+34/z_index = 0
+35/name = "35"
+35/texture = ExtResource( 25 )
+35/tex_offset = Vector2( 0, 0 )
+35/modulate = Color( 1, 1, 1, 1 )
+35/region = Rect2( 384, 768, 128, 128 )
+35/tile_mode = 0
+35/occluder_offset = Vector2( 0, 0 )
+35/navigation_offset = Vector2( 0, 0 )
+35/shape_offset = Vector2( 0, 0 )
+35/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+35/shape_one_way = false
+35/shape_one_way_margin = 0.0
+35/shapes = [  ]
+35/z_index = 0
+36/name = "36"
+36/texture = ExtResource( 25 )
+36/tex_offset = Vector2( 0, 0 )
+36/modulate = Color( 1, 1, 1, 1 )
+36/region = Rect2( 512, 768, 128, 128 )
+36/tile_mode = 0
+36/occluder_offset = Vector2( 0, 0 )
+36/navigation_offset = Vector2( 0, 0 )
+36/shape_offset = Vector2( 0, 0 )
+36/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+36/shape_one_way = false
+36/shape_one_way_margin = 0.0
+36/shapes = [  ]
+36/z_index = 0
+37/name = "37"
+37/texture = ExtResource( 25 )
+37/tex_offset = Vector2( 0, 0 )
+37/modulate = Color( 1, 1, 1, 1 )
+37/region = Rect2( 640, 768, 128, 128 )
+37/tile_mode = 0
+37/occluder_offset = Vector2( 0, 0 )
+37/navigation_offset = Vector2( 0, 0 )
+37/shape_offset = Vector2( 0, 0 )
+37/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+37/shape_one_way = false
+37/shape_one_way_margin = 0.0
+37/shapes = [  ]
+37/z_index = 0
+38/name = "38"
+38/texture = ExtResource( 25 )
+38/tex_offset = Vector2( 0, 0 )
+38/modulate = Color( 1, 1, 1, 1 )
+38/region = Rect2( 768, 768, 128, 128 )
+38/tile_mode = 0
+38/occluder_offset = Vector2( 0, 0 )
+38/navigation_offset = Vector2( 0, 0 )
+38/shape_offset = Vector2( 0, 0 )
+38/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+38/shape_one_way = false
+38/shape_one_way_margin = 0.0
+38/shapes = [  ]
+38/z_index = 0
+39/name = "39"
+39/texture = ExtResource( 25 )
+39/tex_offset = Vector2( 0, 0 )
+39/modulate = Color( 1, 1, 1, 1 )
+39/region = Rect2( 896, 768, 128, 128 )
+39/tile_mode = 0
+39/occluder_offset = Vector2( 0, 0 )
+39/navigation_offset = Vector2( 0, 0 )
+39/shape_offset = Vector2( 0, 0 )
+39/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+39/shape_one_way = false
+39/shape_one_way_margin = 0.0
+39/shapes = [  ]
+39/z_index = 0
+40/name = "40"
+40/texture = ExtResource( 25 )
+40/tex_offset = Vector2( 0, 0 )
+40/modulate = Color( 1, 1, 1, 1 )
+40/region = Rect2( 1024, 768, 128, 128 )
+40/tile_mode = 0
+40/occluder_offset = Vector2( 0, 0 )
+40/navigation_offset = Vector2( 0, 0 )
+40/shape_offset = Vector2( 0, 0 )
+40/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+40/shape_one_way = false
+40/shape_one_way_margin = 0.0
+40/shapes = [  ]
+40/z_index = 0
+41/name = "41"
+41/texture = ExtResource( 25 )
+41/tex_offset = Vector2( 0, 0 )
+41/modulate = Color( 1, 1, 1, 1 )
+41/region = Rect2( 1152, 768, 128, 128 )
+41/tile_mode = 0
+41/occluder_offset = Vector2( 0, 0 )
+41/navigation_offset = Vector2( 0, 0 )
+41/shape_offset = Vector2( 0, 0 )
+41/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+41/shape_one_way = false
+41/shape_one_way_margin = 0.0
+41/shapes = [  ]
+41/z_index = 0
+42/name = "42"
+42/texture = ExtResource( 25 )
+42/tex_offset = Vector2( 0, 0 )
+42/modulate = Color( 1, 1, 1, 1 )
+42/region = Rect2( 1280, 768, 128, 128 )
+42/tile_mode = 0
+42/occluder_offset = Vector2( 0, 0 )
+42/navigation_offset = Vector2( 0, 0 )
+42/shape_offset = Vector2( 0, 0 )
+42/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+42/shape_one_way = false
+42/shape_one_way_margin = 0.0
+42/shapes = [  ]
+42/z_index = 0
+43/name = "43"
+43/texture = ExtResource( 25 )
+43/tex_offset = Vector2( 0, 0 )
+43/modulate = Color( 1, 1, 1, 1 )
+43/region = Rect2( 1408, 768, 128, 128 )
+43/tile_mode = 0
+43/occluder_offset = Vector2( 0, 0 )
+43/navigation_offset = Vector2( 0, 0 )
+43/shape_offset = Vector2( 0, 0 )
+43/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+43/shape_one_way = false
+43/shape_one_way_margin = 0.0
+43/shapes = [  ]
+43/z_index = 0
+44/name = "44"
+44/texture = ExtResource( 25 )
+44/tex_offset = Vector2( 0, 0 )
+44/modulate = Color( 1, 1, 1, 1 )
+44/region = Rect2( 1536, 768, 128, 128 )
+44/tile_mode = 0
+44/occluder_offset = Vector2( 0, 0 )
+44/navigation_offset = Vector2( 0, 0 )
+44/shape_offset = Vector2( 0, 0 )
+44/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+44/shape_one_way = false
+44/shape_one_way_margin = 0.0
+44/shapes = [  ]
+44/z_index = 0
+45/name = "45"
+45/texture = ExtResource( 25 )
+45/tex_offset = Vector2( 0, 0 )
+45/modulate = Color( 1, 1, 1, 1 )
+45/region = Rect2( 1664, 768, 128, 128 )
+45/tile_mode = 0
+45/occluder_offset = Vector2( 0, 0 )
+45/navigation_offset = Vector2( 0, 0 )
+45/shape_offset = Vector2( 0, 0 )
+45/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+45/shape_one_way = false
+45/shape_one_way_margin = 0.0
+45/shapes = [  ]
+45/z_index = 0
+46/name = "46"
+46/texture = ExtResource( 25 )
+46/tex_offset = Vector2( 0, 0 )
+46/modulate = Color( 1, 1, 1, 1 )
+46/region = Rect2( 1792, 768, 128, 128 )
+46/tile_mode = 0
+46/occluder_offset = Vector2( 0, 0 )
+46/navigation_offset = Vector2( 0, 0 )
+46/shape_offset = Vector2( 0, 0 )
+46/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+46/shape_one_way = false
+46/shape_one_way_margin = 0.0
+46/shapes = [  ]
+46/z_index = 0
+47/name = "47"
+47/texture = ExtResource( 25 )
+47/tex_offset = Vector2( 0, 0 )
+47/modulate = Color( 1, 1, 1, 1 )
+47/region = Rect2( 1920, 768, 128, 128 )
+47/tile_mode = 0
+47/occluder_offset = Vector2( 0, 0 )
+47/navigation_offset = Vector2( 0, 0 )
+47/shape_offset = Vector2( 0, 0 )
+47/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+47/shape_one_way = false
+47/shape_one_way_margin = 0.0
+47/shapes = [  ]
+47/z_index = 0
+48/name = "48"
+48/texture = ExtResource( 25 )
+48/tex_offset = Vector2( 0, 0 )
+48/modulate = Color( 1, 1, 1, 1 )
+48/region = Rect2( 2048, 768, 128, 128 )
+48/tile_mode = 0
+48/occluder_offset = Vector2( 0, 0 )
+48/navigation_offset = Vector2( 0, 0 )
+48/shape_offset = Vector2( 0, 0 )
+48/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+48/shape_one_way = false
+48/shape_one_way_margin = 0.0
+48/shapes = [  ]
+48/z_index = 0
+49/name = "49"
+49/texture = ExtResource( 25 )
+49/tex_offset = Vector2( 0, 0 )
+49/modulate = Color( 1, 1, 1, 1 )
+49/region = Rect2( 2176, 768, 128, 128 )
+49/tile_mode = 0
+49/occluder_offset = Vector2( 0, 0 )
+49/navigation_offset = Vector2( 0, 0 )
+49/shape_offset = Vector2( 0, 0 )
+49/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+49/shape_one_way = false
+49/shape_one_way_margin = 0.0
+49/shapes = [  ]
+49/z_index = 0
+50/name = "50"
+50/texture = ExtResource( 25 )
+50/tex_offset = Vector2( 0, 0 )
+50/modulate = Color( 1, 1, 1, 1 )
+50/region = Rect2( 2304, 768, 128, 128 )
+50/tile_mode = 0
+50/occluder_offset = Vector2( 0, 0 )
+50/navigation_offset = Vector2( 0, 0 )
+50/shape_offset = Vector2( 0, 0 )
+50/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+50/shape_one_way = false
+50/shape_one_way_margin = 0.0
+50/shapes = [  ]
+50/z_index = 0
+51/name = "51"
+51/texture = ExtResource( 25 )
+51/tex_offset = Vector2( 0, 0 )
+51/modulate = Color( 1, 1, 1, 1 )
+51/region = Rect2( 2432, 768, 128, 128 )
+51/tile_mode = 0
+51/occluder_offset = Vector2( 0, 0 )
+51/navigation_offset = Vector2( 0, 0 )
+51/shape_offset = Vector2( 0, 0 )
+51/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+51/shape_one_way = false
+51/shape_one_way_margin = 0.0
+51/shapes = [  ]
+51/z_index = 0
+52/name = "52"
+52/texture = ExtResource( 25 )
+52/tex_offset = Vector2( 0, 0 )
+52/modulate = Color( 1, 1, 1, 1 )
+52/region = Rect2( 2560, 768, 128, 128 )
+52/tile_mode = 0
+52/occluder_offset = Vector2( 0, 0 )
+52/navigation_offset = Vector2( 0, 0 )
+52/shape_offset = Vector2( 0, 0 )
+52/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+52/shape_one_way = false
+52/shape_one_way_margin = 0.0
+52/shapes = [  ]
+52/z_index = 0
+53/name = "53"
+53/texture = ExtResource( 25 )
+53/tex_offset = Vector2( 0, 0 )
+53/modulate = Color( 1, 1, 1, 1 )
+53/region = Rect2( 2688, 768, 128, 128 )
+53/tile_mode = 0
+53/occluder_offset = Vector2( 0, 0 )
+53/navigation_offset = Vector2( 0, 0 )
+53/shape_offset = Vector2( 0, 0 )
+53/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+53/shape_one_way = false
+53/shape_one_way_margin = 0.0
+53/shapes = [  ]
+53/z_index = 0
+54/name = "54"
+54/texture = ExtResource( 25 )
+54/tex_offset = Vector2( 0, 0 )
+54/modulate = Color( 1, 1, 1, 1 )
+54/region = Rect2( 2816, 768, 128, 128 )
+54/tile_mode = 0
+54/occluder_offset = Vector2( 0, 0 )
+54/navigation_offset = Vector2( 0, 0 )
+54/shape_offset = Vector2( 0, 0 )
+54/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+54/shape_one_way = false
+54/shape_one_way_margin = 0.0
+54/shapes = [  ]
+54/z_index = 0
+55/name = "55"
+55/texture = ExtResource( 25 )
+55/tex_offset = Vector2( 0, 0 )
+55/modulate = Color( 1, 1, 1, 1 )
+55/region = Rect2( 2944, 768, 128, 128 )
+55/tile_mode = 0
+55/occluder_offset = Vector2( 0, 0 )
+55/navigation_offset = Vector2( 0, 0 )
+55/shape_offset = Vector2( 0, 0 )
+55/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+55/shape_one_way = false
+55/shape_one_way_margin = 0.0
+55/shapes = [  ]
+55/z_index = 0
+56/name = "56"
+56/texture = ExtResource( 25 )
+56/tex_offset = Vector2( 0, 0 )
+56/modulate = Color( 1, 1, 1, 1 )
+56/region = Rect2( 3072, 768, 128, 128 )
+56/tile_mode = 0
+56/occluder_offset = Vector2( 0, 0 )
+56/navigation_offset = Vector2( 0, 0 )
+56/shape_offset = Vector2( 0, 0 )
+56/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+56/shape_one_way = false
+56/shape_one_way_margin = 0.0
+56/shapes = [  ]
+56/z_index = 0
+57/name = "57"
+57/texture = ExtResource( 25 )
+57/tex_offset = Vector2( 0, 0 )
+57/modulate = Color( 1, 1, 1, 1 )
+57/region = Rect2( 3200, 768, 128, 128 )
+57/tile_mode = 0
+57/occluder_offset = Vector2( 0, 0 )
+57/navigation_offset = Vector2( 0, 0 )
+57/shape_offset = Vector2( 0, 0 )
+57/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+57/shape_one_way = false
+57/shape_one_way_margin = 0.0
+57/shapes = [  ]
+57/z_index = 0
+58/name = "58"
+58/texture = ExtResource( 25 )
+58/tex_offset = Vector2( 0, 0 )
+58/modulate = Color( 1, 1, 1, 1 )
+58/region = Rect2( 3328, 768, 128, 128 )
+58/tile_mode = 0
+58/occluder_offset = Vector2( 0, 0 )
+58/navigation_offset = Vector2( 0, 0 )
+58/shape_offset = Vector2( 0, 0 )
+58/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+58/shape_one_way = false
+58/shape_one_way_margin = 0.0
+58/shapes = [  ]
+58/z_index = 0
+59/name = "59"
+59/texture = ExtResource( 25 )
+59/tex_offset = Vector2( 0, 0 )
+59/modulate = Color( 1, 1, 1, 1 )
+59/region = Rect2( 3456, 768, 128, 128 )
+59/tile_mode = 0
+59/occluder_offset = Vector2( 0, 0 )
+59/navigation_offset = Vector2( 0, 0 )
+59/shape_offset = Vector2( 0, 0 )
+59/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+59/shape_one_way = false
+59/shape_one_way_margin = 0.0
+59/shapes = [  ]
+59/z_index = 0
+60/name = "60"
+60/texture = ExtResource( 25 )
+60/tex_offset = Vector2( 0, 0 )
+60/modulate = Color( 1, 1, 1, 1 )
+60/region = Rect2( 3584, 768, 128, 128 )
+60/tile_mode = 0
+60/occluder_offset = Vector2( 0, 0 )
+60/navigation_offset = Vector2( 0, 0 )
+60/shape_offset = Vector2( 0, 0 )
+60/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+60/shape_one_way = false
+60/shape_one_way_margin = 0.0
+60/shapes = [  ]
+60/z_index = 0
+61/name = "61"
+61/texture = ExtResource( 25 )
+61/tex_offset = Vector2( 0, 0 )
+61/modulate = Color( 1, 1, 1, 1 )
+61/region = Rect2( 3712, 768, 128, 128 )
+61/tile_mode = 0
+61/occluder_offset = Vector2( 0, 0 )
+61/navigation_offset = Vector2( 0, 0 )
+61/shape_offset = Vector2( 0, 0 )
+61/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+61/shape_one_way = false
+61/shape_one_way_margin = 0.0
+61/shapes = [  ]
+61/z_index = 0
+62/name = "62"
+62/texture = ExtResource( 25 )
+62/tex_offset = Vector2( 0, 0 )
+62/modulate = Color( 1, 1, 1, 1 )
+62/region = Rect2( 3840, 768, 128, 128 )
+62/tile_mode = 0
+62/occluder_offset = Vector2( 0, 0 )
+62/navigation_offset = Vector2( 0, 0 )
+62/shape_offset = Vector2( 0, 0 )
+62/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+62/shape_one_way = false
+62/shape_one_way_margin = 0.0
+62/shapes = [  ]
+62/z_index = 0
+63/name = "63"
+63/texture = ExtResource( 25 )
+63/tex_offset = Vector2( 0, 0 )
+63/modulate = Color( 1, 1, 1, 1 )
+63/region = Rect2( 3968, 768, 128, 128 )
+63/tile_mode = 0
+63/occluder_offset = Vector2( 0, 0 )
+63/navigation_offset = Vector2( 0, 0 )
+63/shape_offset = Vector2( 0, 0 )
+63/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+63/shape_one_way = false
+63/shape_one_way_margin = 0.0
+63/shapes = [  ]
+63/z_index = 0
+64/name = "64"
+64/texture = ExtResource( 25 )
+64/tex_offset = Vector2( 0, 0 )
+64/modulate = Color( 1, 1, 1, 1 )
+64/region = Rect2( 4096, 768, 128, 128 )
+64/tile_mode = 0
+64/occluder_offset = Vector2( 0, 0 )
+64/navigation_offset = Vector2( 0, 0 )
+64/shape_offset = Vector2( 0, 0 )
+64/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+64/shape_one_way = false
+64/shape_one_way_margin = 0.0
+64/shapes = [  ]
+64/z_index = 0
+
+[sub_resource type="TileSet" id=55]
+0/name = "Draw Red"
+0/texture = ExtResource( 25 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 128, 384, 128, 128 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "Draw Black"
+1/texture = ExtResource( 25 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 256, 384, 128, 128 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "Draw Orange"
+2/texture = ExtResource( 25 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 384, 384, 128, 128 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "Victory"
+3/texture = ExtResource( 25 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 640, 384, 128, 128 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "Prison"
+4/texture = ExtResource( 25 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 896, 384, 128, 128 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "Roll Again"
+5/texture = ExtResource( 25 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 1024, 384, 128, 128 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "Back To Start"
+6/texture = ExtResource( 25 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 1152, 384, 128, 128 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+7/name = "Lose 1 Turn"
+7/texture = ExtResource( 25 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 1280, 384, 128, 128 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
+8/name = "Even / Odd"
+8/texture = ExtResource( 25 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 1536, 384, 128, 128 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape_one_way = false
+8/shape_one_way_margin = 0.0
+8/shapes = [  ]
+8/z_index = 0
+9/name = "+1"
+9/texture = ExtResource( 25 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 128, 1024, 128, 128 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+10/name = "+5 / +6"
+10/texture = ExtResource( 25 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 1024, 1024, 128, 128 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape_one_way = false
+10/shape_one_way_margin = 0.0
+10/shapes = [  ]
+10/z_index = 0
+11/name = "XMas / +1"
+11/texture = ExtResource( 25 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 1152, 1024, 128, 128 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape_one_way = false
+11/shape_one_way_margin = 0.0
+11/shapes = [  ]
+11/z_index = 0
+12/name = "+4"
+12/texture = ExtResource( 25 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 512, 1024, 128, 128 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 0, 0 )
+12/navigation_offset = Vector2( 0, 0 )
+12/shape_offset = Vector2( 0, 0 )
+12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+12/shape_one_way = false
+12/shape_one_way_margin = 0.0
+12/shapes = [  ]
+12/z_index = 0
+13/name = "+2"
+13/texture = ExtResource( 25 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 256, 1024, 128, 128 )
+13/tile_mode = 0
+13/occluder_offset = Vector2( 0, 0 )
+13/navigation_offset = Vector2( 0, 0 )
+13/shape_offset = Vector2( 0, 0 )
+13/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+13/shape_one_way = false
+13/shape_one_way_margin = 0.0
+13/shapes = [  ]
+13/z_index = 0
+14/name = "FFTiles2.png 14"
+14/texture = ExtResource( 25 )
+14/tex_offset = Vector2( 0, 0 )
+14/modulate = Color( 1, 1, 1, 1 )
+14/region = Rect2( 128, 1408, 128, 128 )
+14/tile_mode = 0
+14/occluder_offset = Vector2( 0, 0 )
+14/navigation_offset = Vector2( 0, 0 )
+14/shape_offset = Vector2( 0, 0 )
+14/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+14/shape_one_way = false
+14/shape_one_way_margin = 0.0
+14/shapes = [  ]
+14/z_index = 0
+15/name = "FFTiles2.png 15"
+15/texture = ExtResource( 25 )
+15/tex_offset = Vector2( 0, 0 )
+15/modulate = Color( 1, 1, 1, 1 )
+15/region = Rect2( 256, 1408, 128, 128 )
+15/tile_mode = 0
+15/occluder_offset = Vector2( 0, 0 )
+15/navigation_offset = Vector2( 0, 0 )
+15/shape_offset = Vector2( 0, 0 )
+15/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+15/shape_one_way = false
+15/shape_one_way_margin = 0.0
+15/shapes = [  ]
+15/z_index = 0
+
+[sub_resource type="StyleBoxFlat" id=48]
+bg_color = Color( 0.2, 0.2, 0.2, 0.6 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="DynamicFont" id=49]
+size = 32
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=50]
+size = 26
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=51]
+size = 24
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=52]
+size = 28
+font_data = ExtResource( 19 )
+
+[node name="Credits" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 24 )
+
+[node name="Background" type="ParallaxBackground" parent="."]
+
+[node name="Solid_Color" type="Panel" parent="Background"]
+margin_right = 1280.0
+margin_bottom = 720.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="Utility_Buttons" type="CanvasLayer" parent="."]
+script = ExtResource( 5 )
+
+[node name="Panel_Center" type="Panel" parent="Utility_Buttons"]
+margin_right = 1280.0
+margin_bottom = 10.0
+custom_styles/panel = SubResource( 2 )
+
+[node name="Back" type="Control" parent="Utility_Buttons"]
+
+[node name="Panel_Left" type="Panel" parent="Utility_Buttons/Back"]
+margin_right = 100.0
+margin_bottom = 100.0
+custom_styles/panel = SubResource( 3 )
+
+[node name="Back_Button" type="TextureButton" parent="Utility_Buttons/Back"]
+margin_left = 15.0
+margin_top = 15.0
+margin_right = 215.0
+margin_bottom = 215.0
+rect_scale = Vector2( 0.4, 0.4 )
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 16 )
+texture_hover = ExtResource( 18 )
+texture_disabled = ExtResource( 17 )
+
+[node name="Settings" type="Control" parent="Utility_Buttons"]
+
+[node name="Panel_Right" type="Panel" parent="Utility_Buttons/Settings"]
+margin_left = 1180.0
+margin_right = 1280.0
+margin_bottom = 100.0
+custom_styles/panel = SubResource( 4 )
+
+[node name="Scene_Cover" type="Panel" parent="Utility_Buttons/Settings"]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 1280.0
+margin_bottom = 720.0
+script = ExtResource( 6 )
+
+[node name="Settings_Button" type="TextureButton" parent="Utility_Buttons/Settings"]
+margin_left = 1185.0
+margin_top = 15.0
+margin_right = 1385.0
+margin_bottom = 215.0
+rect_scale = Vector2( 0.4, 0.4 )
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 2 )
+texture_hover = ExtResource( 3 )
+texture_disabled = ExtResource( 1 )
+
+[node name="Settings_Menu" type="MarginContainer" parent="Utility_Buttons/Settings"]
+visible = false
+margin_left = 1040.0
+margin_top = -260.0
+margin_right = 1290.0
+margin_bottom = 15.0
+custom_constants/margin_top = 70
+custom_constants/margin_bottom = 16
+script = ExtResource( 23 )
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Settings_Menu"]
+margin_top = 70.0
+margin_right = 250.0
+margin_bottom = 259.0
+custom_styles/panel = SubResource( 5 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Utility_Buttons/Settings/Settings_Menu/Panel"]
+margin_right = 250.0
+margin_bottom = 186.0
+custom_constants/margin_right = 0
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Settings_Menu/Panel/MarginContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 250.0
+margin_bottom = 176.0
+custom_styles/panel = SubResource( 6 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Utility_Buttons/Settings/Settings_Menu/Panel/MarginContainer/Panel"]
+margin_right = 240.0
+margin_bottom = 165.0
+custom_constants/margin_top = 20
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Utility_Buttons/Settings/Settings_Menu/Panel/MarginContainer/Panel/MarginContainer"]
+margin_left = 10.0
+margin_top = 20.0
+margin_right = 240.0
+margin_bottom = 145.0
+custom_constants/separation = 25
+
+[node name="Profile" type="Button" parent="Utility_Buttons/Settings/Settings_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer"]
+margin_right = 230.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 0, 50 )
+custom_fonts/font = SubResource( 7 )
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+text = "Profile"
+
+[node name="Audio" type="Button" parent="Utility_Buttons/Settings/Settings_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer"]
+margin_top = 75.0
+margin_right = 230.0
+margin_bottom = 125.0
+rect_min_size = Vector2( 0, 50 )
+custom_fonts/font = SubResource( 7 )
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+text = "Audio"
+
+[node name="Profile_Menu" type="MarginContainer" parent="Utility_Buttons/Settings"]
+visible = false
+margin_left = 390.0
+margin_top = -500.0
+margin_right = 890.0
+script = ExtResource( 20 )
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Profile_Menu"]
+margin_right = 500.0
+margin_bottom = 500.0
+custom_styles/panel = SubResource( 10 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Utility_Buttons/Settings/Profile_Menu/Panel"]
+margin_right = 500.0
+margin_bottom = 500.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 490.0
+margin_bottom = 490.0
+custom_styles/panel = SubResource( 11 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel"]
+margin_right = 480.0
+margin_bottom = 480.0
+custom_constants/margin_right = 25
+custom_constants/margin_top = 30
+custom_constants/margin_left = 25
+custom_constants/margin_bottom = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer"]
+margin_left = 25.0
+margin_top = 30.0
+margin_right = 455.0
+margin_bottom = 450.0
+custom_constants/separation = 30
+
+[node name="Player_Name" type="Control" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer"]
+margin_right = 430.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 430, 100 )
+script = ExtResource( 22 )
+
+[node name="Option_Panel" type="Panel" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Name"]
+margin_left = -5.0
+margin_top = -5.0
+margin_right = 435.0
+margin_bottom = 102.0
+custom_styles/panel = SubResource( 12 )
+
+[node name="Option_Name" type="Label" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Name"]
+margin_left = 4.0
+margin_top = 2.0
+margin_right = 142.0
+margin_bottom = 34.0
+custom_fonts/font = SubResource( 13 )
+text = "Username: "
+valign = 1
+
+[node name="Current_Name" type="Label" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Name"]
+margin_left = 142.0
+margin_top = 2.0
+margin_right = 417.0
+margin_bottom = 34.0
+custom_fonts/font = SubResource( 14 )
+text = "Player"
+
+[node name="Name_Input" type="LineEdit" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Name"]
+margin_left = 2.0
+margin_top = 40.0
+margin_right = 202.0
+margin_bottom = 76.0
+custom_fonts/font = SubResource( 15 )
+placeholder_text = "New Name Here"
+caret_blink = true
+caret_blink_speed = 0.5
+
+[node name="Change_Name" type="Button" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Name"]
+margin_left = 213.0
+margin_top = 43.0
+margin_right = 283.0
+margin_bottom = 73.0
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 16 )
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+text = "Change"
+
+[node name="Name_Error" type="Label" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Name"]
+visible = false
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 4.0
+margin_top = 79.0
+margin_right = 48.0
+margin_bottom = 98.0
+custom_fonts/font = SubResource( 17 )
+text = "Error"
+
+[node name="Player_Title" type="Control" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer"]
+margin_top = 130.0
+margin_right = 430.0
+margin_bottom = 230.0
+rect_min_size = Vector2( 430, 100 )
+script = ExtResource( 21 )
+
+[node name="Option_Panel" type="Panel" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Title"]
+margin_left = -5.0
+margin_top = -3.0
+margin_right = 435.0
+margin_bottom = 102.0
+custom_styles/panel = SubResource( 12 )
+
+[node name="Current_Title" type="Label" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Title"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 354.0
+margin_bottom = 36.0
+custom_fonts/font = SubResource( 14 )
+text = "Title: Certified Tryhard"
+
+[node name="Change_Title" type="Button" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Title"]
+margin_left = 4.0
+margin_top = 44.0
+margin_right = 94.0
+margin_bottom = 84.0
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 18 )
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+text = "Titles"
+
+[node name="How_Many_Titles" type="Label" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Title"]
+margin_left = 109.0
+margin_top = 41.0
+margin_right = 402.0
+margin_bottom = 65.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 19 )
+text = "Titles unlocked: ?/20"
+
+[node name="Comment" type="Label" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Title"]
+margin_left = 109.0
+margin_top = 62.0
+margin_right = 439.0
+margin_bottom = 84.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 20 )
+text = "Play online to unlock more"
+
+[node name="Player_Avatar" type="Control" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer"]
+margin_top = 260.0
+margin_right = 430.0
+margin_bottom = 360.0
+rect_min_size = Vector2( 430, 100 )
+script = ExtResource( 9 )
+
+[node name="Option_Panel" type="Panel" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Avatar"]
+margin_left = -5.0
+margin_top = -3.0
+margin_right = 435.0
+margin_bottom = 137.0
+custom_styles/panel = SubResource( 12 )
+
+[node name="Option_Name" type="Label" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Avatar"]
+margin_left = 6.0
+margin_top = 4.0
+margin_right = 127.0
+margin_bottom = 36.0
+custom_fonts/font = SubResource( 21 )
+text = "Avatar: "
+valign = 1
+
+[node name="Avatar_Border_1" type="Panel" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Avatar"]
+margin_left = 140.0
+margin_top = 5.0
+margin_right = 260.0
+margin_bottom = 125.0
+custom_styles/panel = SubResource( 22 )
+
+[node name="Avatar_Border_2" type="Panel" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Avatar/Avatar_Border_1"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 116.0
+margin_bottom = 116.0
+custom_styles/panel = SubResource( 23 )
+
+[node name="Sprite" type="Sprite" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Avatar/Avatar_Border_1/Avatar_Border_2"]
+position = Vector2( 56, 56 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 4 )
+
+[node name="Change_Avatar" type="Button" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Avatar"]
+margin_left = 4.0
+margin_top = 44.0
+margin_right = 124.0
+margin_bottom = 84.0
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 24 )
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/normal = SubResource( 9 )
+text = "Avatars"
+
+[node name="How_Many_Avatars" type="Label" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Avatar"]
+margin_left = 268.0
+margin_top = 7.0
+margin_right = 427.0
+margin_bottom = 70.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_constants/line_spacing = -1
+custom_fonts/font = SubResource( 19 )
+text = "Avatars unlocked: ?/20"
+align = 1
+autowrap = true
+
+[node name="Comment" type="Label" parent="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Avatar"]
+margin_left = 268.0
+margin_top = 76.0
+margin_right = 427.0
+margin_bottom = 121.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_constants/line_spacing = -1
+custom_fonts/font = SubResource( 19 )
+text = "Play online to unlock more"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Title_List" type="MarginContainer" parent="Utility_Buttons/Settings"]
+visible = false
+margin_top = -580.0
+margin_right = 352.0
+script = ExtResource( 7 )
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Title_List"]
+margin_right = 352.0
+margin_bottom = 580.0
+custom_styles/panel = SubResource( 25 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Utility_Buttons/Settings/Title_List/Panel"]
+margin_right = 353.0
+margin_bottom = 581.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_bottom = 10
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer"]
+margin_top = 10.0
+margin_right = 343.0
+margin_bottom = 571.0
+custom_styles/panel = SubResource( 26 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer/Panel"]
+margin_top = -10.0
+margin_right = 343.0
+margin_bottom = 570.0
+custom_constants/margin_right = 15
+custom_constants/margin_top = 30
+custom_constants/margin_left = 15
+custom_constants/margin_bottom = 30
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer/Panel/MarginContainer"]
+margin_left = 15.0
+margin_top = 30.0
+margin_right = 328.0
+margin_bottom = 550.0
+custom_styles/panel = SubResource( 27 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer/Panel/MarginContainer"]
+margin_left = 15.0
+margin_top = 30.0
+margin_right = 328.0
+margin_bottom = 550.0
+mouse_filter = 1
+script = ExtResource( 10 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer"]
+margin_right = 313.0
+margin_bottom = 520.0
+mouse_filter = 1
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 303.0
+margin_bottom = 510.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 30
+
+[node name="Unlocked_Panel" type="Panel" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+visible = false
+margin_right = 293.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 0, 60 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 28 )
+
+[node name="Button" type="Button" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Unlocked_Panel"]
+margin_left = 14.0
+margin_top = 10.0
+margin_right = 266.0
+margin_bottom = 50.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 29 )
+custom_styles/hover = SubResource( 30 )
+custom_styles/pressed = SubResource( 30 )
+custom_styles/focus = SubResource( 30 )
+custom_styles/disabled = SubResource( 30 )
+custom_styles/normal = SubResource( 31 )
+text = "Anonymous Player"
+
+[node name="Locked_Panel" type="Panel" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+visible = false
+margin_right = 293.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 0, 100 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 28 )
+
+[node name="Button" type="Button" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Locked_Panel"]
+margin_left = 14.0
+margin_top = 11.0
+margin_right = 266.0
+margin_bottom = 51.0
+focus_mode = 0
+mouse_filter = 1
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 29 )
+custom_styles/disabled = SubResource( 32 )
+disabled = true
+text = "???"
+
+[node name="Label" type="Label" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Locked_Panel"]
+margin_left = 3.0
+margin_top = 55.0
+margin_right = 280.0
+margin_bottom = 96.0
+mouse_filter = 1
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 33 )
+text = "Play fewer Red Cards than other players and still win"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Avatar_List" type="MarginContainer" parent="Utility_Buttons/Settings"]
+visible = false
+margin_top = -580.0
+margin_right = 352.0
+script = ExtResource( 8 )
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Avatar_List"]
+margin_right = 352.0
+margin_bottom = 580.0
+custom_styles/panel = SubResource( 25 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Utility_Buttons/Settings/Avatar_List/Panel"]
+margin_right = 353.0
+margin_bottom = 581.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_bottom = 10
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer"]
+margin_top = 10.0
+margin_right = 343.0
+margin_bottom = 571.0
+custom_styles/panel = SubResource( 26 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel"]
+margin_top = -10.0
+margin_right = 343.0
+margin_bottom = 570.0
+custom_constants/margin_right = 15
+custom_constants/margin_top = 30
+custom_constants/margin_left = 15
+custom_constants/margin_bottom = 30
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer"]
+margin_left = 15.0
+margin_top = 30.0
+margin_right = 328.0
+margin_bottom = 550.0
+custom_styles/panel = SubResource( 34 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer"]
+margin_left = 15.0
+margin_top = 30.0
+margin_right = 328.0
+margin_bottom = 550.0
+script = ExtResource( 10 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer"]
+margin_right = 313.0
+margin_bottom = 520.0
+mouse_filter = 1
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 303.0
+margin_bottom = 510.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 30
+
+[node name="Unlocked_Panel" type="Panel" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+visible = false
+margin_right = 293.0
+margin_bottom = 130.0
+rect_min_size = Vector2( 0, 130 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 35 )
+
+[node name="Avatar_Border_1" type="Panel" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Unlocked_Panel"]
+margin_left = 142.0
+margin_top = 5.0
+margin_right = 262.0
+margin_bottom = 125.0
+mouse_filter = 1
+custom_styles/panel = SubResource( 36 )
+
+[node name="Avatar_Border_2" type="Panel" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Unlocked_Panel/Avatar_Border_1"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 116.0
+margin_bottom = 116.0
+mouse_filter = 1
+custom_styles/panel = SubResource( 37 )
+
+[node name="Sprite" type="Sprite" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Unlocked_Panel/Avatar_Border_1/Avatar_Border_2"]
+position = Vector2( 56, 56 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 4 )
+
+[node name="Button" type="Button" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Unlocked_Panel"]
+margin_left = 20.0
+margin_top = 45.0
+margin_right = 124.0
+margin_bottom = 85.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 38 )
+custom_styles/hover = SubResource( 39 )
+custom_styles/pressed = SubResource( 39 )
+custom_styles/focus = SubResource( 39 )
+custom_styles/disabled = SubResource( 39 )
+custom_styles/normal = SubResource( 40 )
+text = "Change"
+
+[node name="Locked_Panel" type="Panel" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+visible = false
+margin_right = 293.0
+margin_bottom = 130.0
+rect_min_size = Vector2( 0, 130 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 35 )
+
+[node name="Avatar_Border_1" type="Panel" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Locked_Panel"]
+margin_left = 142.0
+margin_top = 5.0
+margin_right = 262.0
+margin_bottom = 125.0
+mouse_filter = 1
+custom_styles/panel = SubResource( 36 )
+
+[node name="Avatar_Border_2" type="Panel" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Locked_Panel/Avatar_Border_1"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 116.0
+margin_bottom = 116.0
+mouse_filter = 1
+custom_styles/panel = SubResource( 37 )
+
+[node name="Sprite" type="Sprite" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Locked_Panel/Avatar_Border_1/Avatar_Border_2"]
+position = Vector2( 56, 56 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="Label" type="Label" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Locked_Panel"]
+margin_left = 18.0
+margin_right = 126.0
+margin_bottom = 130.0
+mouse_filter = 1
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 41 )
+text = "Play 15 Red Cards in a single game"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Audio_Menu" type="MarginContainer" parent="Utility_Buttons/Settings"]
+visible = false
+margin_left = 390.0
+margin_top = -500.0
+margin_right = 890.0
+script = ExtResource( 12 )
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Audio_Menu"]
+margin_right = 500.0
+margin_bottom = 500.0
+custom_styles/panel = SubResource( 42 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Utility_Buttons/Settings/Audio_Menu/Panel"]
+margin_right = 500.0
+margin_bottom = 500.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 490.0
+margin_bottom = 490.0
+custom_styles/panel = SubResource( 43 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer/Panel"]
+margin_right = 480.0
+margin_bottom = 480.0
+custom_constants/margin_right = 25
+custom_constants/margin_top = 25
+custom_constants/margin_left = 25
+custom_constants/margin_bottom = 25
+
+[node name="Panel" type="Panel" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer/Panel/MarginContainer"]
+margin_left = 25.0
+margin_top = 25.0
+margin_right = 455.0
+margin_bottom = 455.0
+custom_styles/panel = SubResource( 44 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer/Panel/MarginContainer"]
+margin_left = 25.0
+margin_top = 25.0
+margin_right = 455.0
+margin_bottom = 455.0
+custom_constants/separation = 20
+
+[node name="Master" type="Control" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer"]
+margin_right = 430.0
+margin_bottom = 130.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Master"]
+margin_left = 20.0
+margin_top = 15.0
+margin_right = 198.0
+margin_bottom = 58.0
+custom_fonts/font = SubResource( 45 )
+text = "Master"
+
+[node name="HSlider" type="HSlider" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Master"]
+margin_left = 32.0
+margin_top = 60.0
+margin_right = 1142.0
+margin_bottom = 260.0
+rect_scale = Vector2( 0.33, 0.33 )
+focus_mode = 0
+custom_icons/grabber_highlight = ExtResource( 15 )
+custom_icons/grabber = ExtResource( 14 )
+custom_styles/slider = SubResource( 46 )
+custom_styles/grabber_area_highlight = SubResource( 47 )
+custom_styles/grabber_area = SubResource( 47 )
+max_value = 1.0
+step = 0.001
+script = ExtResource( 11 )
+
+[node name="Music" type="Control" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer"]
+margin_top = 150.0
+margin_right = 430.0
+margin_bottom = 280.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Music"]
+margin_left = 20.0
+margin_top = 10.0
+margin_right = 198.0
+margin_bottom = 53.0
+custom_fonts/font = SubResource( 45 )
+text = "Music"
+
+[node name="HSlider" type="HSlider" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Music"]
+margin_left = 32.0
+margin_top = 55.0
+margin_right = 1142.0
+margin_bottom = 255.0
+rect_scale = Vector2( 0.33, 0.33 )
+focus_mode = 0
+custom_icons/grabber_highlight = ExtResource( 15 )
+custom_icons/grabber = ExtResource( 14 )
+custom_styles/slider = SubResource( 46 )
+custom_styles/grabber_area_highlight = SubResource( 47 )
+custom_styles/grabber_area = SubResource( 47 )
+max_value = 1.0
+step = 0.001
+script = ExtResource( 11 )
+
+[node name="Sound" type="Control" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer"]
+margin_top = 300.0
+margin_right = 430.0
+margin_bottom = 430.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Sound"]
+margin_left = 20.0
+margin_top = 5.0
+margin_right = 198.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 45 )
+text = "Sound"
+
+[node name="HSlider" type="HSlider" parent="Utility_Buttons/Settings/Audio_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Sound"]
+margin_left = 32.0
+margin_top = 50.0
+margin_right = 1142.0
+margin_bottom = 250.0
+rect_scale = Vector2( 0.33, 0.33 )
+focus_mode = 0
+custom_icons/grabber_highlight = ExtResource( 15 )
+custom_icons/grabber = ExtResource( 14 )
+custom_styles/slider = SubResource( 46 )
+custom_styles/grabber_area_highlight = SubResource( 47 )
+custom_styles/grabber_area = SubResource( 47 )
+max_value = 1.0
+step = 0.001
+script = ExtResource( 11 )
+
+[node name="Sprites" type="Control" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+
+[node name="Board" type="Control" parent="Sprites"]
+modulate = Color( 0.4, 0.4, 0.4, 0.4 )
+margin_left = 640.0
+margin_top = 360.0
+margin_right = 640.0
+margin_bottom = 360.0
+
+[node name="Path_Map" type="TileMap" parent="Sprites/Board"]
+scale = Vector2( 0.4, 0.4 )
+tile_set = SubResource( 53 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( -983056, 7, 0, -983052, 5, 0, -983048, 5, 0, -983044, 5, 0, -1048576, 5, 0, -1048572, 5, 0, -1048568, 8, 0, -1048564, 2, 0, -720912, 4, 0, -720908, 7, 0, -720904, 5, 0, -720900, 5, 0, -786432, 5, 0, -786428, 8, 0, -786424, 4, 0, -786420, 4, 0, -458768, 4, 0, -458764, 4, 0, -458760, 7, 0, -458756, 5, 0, -524288, 8, 0, -524284, 4, 0, -524280, 4, 0, -524276, 4, 0, -196624, 4, 0, -196620, 4, 0, -196616, 4, 0, -196612, 2, 0, -262144, 4, 0, -262140, 4, 0, -262136, 4, 0, -262132, 4, 0, 65520, 4, 0, 65524, 4, 0, 65528, 4, 0, 65532, 6, 0, 0, 9, 0, 4, 4, 0, 8, 4, 0, 12, 4, 0, 327664, 4, 0, 327668, 4, 0, 327672, 6, 0, 327676, 5, 0, 262144, 5, 0, 262148, 9, 0, 262152, 4, 0, 262156, 4, 0, 589808, 4, 0, 589812, 6, 0, 589816, 5, 0, 589820, 5, 0, 524288, 5, 0, 524292, 5, 0, 524296, 9, 0, 524300, 4, 0, 851952, 6, 0, 851956, 5, 0, 851960, 5, 0, 851964, 5, 0, 786432, 5, 0, 786436, 5, 0, 786440, 5, 0, 786444, 9, 0 )
+
+[node name="Number_Map" type="TileMap" parent="Sprites/Board"]
+scale = Vector2( 0.4, 0.4 )
+tile_set = SubResource( 54 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( -983056, 22, 0, -983052, 23, 0, -983048, 24, 0, -983044, 25, 0, -1048576, 26, 0, -1048572, 27, 0, -1048568, 28, 0, -1048564, 1, 0, -720912, 21, 0, -720908, 44, 0, -720904, 45, 0, -720900, 46, 0, -786432, 47, 0, -786428, 48, 0, -786424, 29, 0, -786420, 2, 0, -458768, 20, 0, -458764, 43, 0, -458760, 58, 0, -458756, 59, 0, -524288, 60, 0, -524284, 49, 0, -524280, 30, 0, -524276, 3, 0, -196624, 19, 0, -196620, 42, 0, -196616, 57, 0, -196612, 64, 0, -262144, 61, 0, -262140, 50, 0, -262136, 31, 0, -262132, 4, 0, 65520, 18, 0, 65524, 41, 0, 65528, 56, 0, 65532, 63, 0, 0, 62, 0, 4, 51, 0, 8, 32, 0, 12, 5, 0, 327664, 17, 0, 327668, 40, 0, 327672, 55, 0, 327676, 54, 0, 262144, 53, 0, 262148, 52, 0, 262152, 33, 0, 262156, 6, 0, 589808, 16, 0, 589812, 39, 0, 589816, 38, 0, 589820, 37, 0, 524288, 36, 0, 524292, 35, 0, 524296, 34, 0, 524300, 7, 0, 851952, 15, 0, 851956, 14, 0, 851960, 13, 0, 851964, 12, 0, 786432, 11, 0, 786436, 10, 0, 786440, 9, 0, 786444, 8, 0 )
+
+[node name="Symbol_Map" type="TileMap" parent="Sprites/Board"]
+scale = Vector2( 0.4, 0.4 )
+tile_set = SubResource( 55 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( -983056, 4, 0, -983052, 1, 0, -983044, 11, 0, -1048576, 0, 0, -1048572, 1, 0, -1048568, 13, 0, -1048564, 0, 0, -720912, 0, 0, -720908, 10, 0, -720904, 1, 0, -786428, 0, 0, -786424, 1, 0, -458768, 0, 0, -458764, 1, 0, -458760, 0, 0, -458756, 1, 0, -524288, 1, 0, -524284, 1, 0, -196612, 3, 0, -262144, 1, 0, -262140, 8, 0, -262136, 0, 0, -262132, 1, 0, 65520, 1, 0, 65532, 1, 0, 0, 1, 0, 8, 2, 0, 327664, 6, 0, 327668, 1, 0, 327672, 0, 0, 262148, 1, 0, 262152, 7, 0, 589812, 0, 0, 589820, 1, 0, 524296, 1, 0, 524300, 0, 0, 851952, 0, 0, 851956, 1, 0, 851960, 12, 0, 851964, 0, 0, 786432, 1, 0, 786444, 5, 0 )
+
+[node name="Row1" type="Control" parent="Sprites"]
+margin_left = -25.0
+margin_top = -489.0
+margin_right = -25.0
+margin_bottom = -489.0
+
+[node name="Back1" type="Sprite" parent="Sprites/Row1"]
+modulate = Color( 1, 1, 1, 0.0784314 )
+position = Vector2( 95, 588 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 26 )
+
+[node name="Back2" type="Sprite" parent="Sprites/Row1"]
+modulate = Color( 1, 1, 1, 0.0784314 )
+position = Vector2( 285, 588 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 28 )
+
+[node name="Back3" type="Sprite" parent="Sprites/Row1"]
+modulate = Color( 1, 1, 1, 0.0784314 )
+position = Vector2( 475, 588 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 27 )
+
+[node name="Back4" type="Sprite" parent="Sprites/Row1"]
+modulate = Color( 1, 1, 1, 0.0784314 )
+position = Vector2( 665, 588 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 26 )
+
+[node name="Back5" type="Sprite" parent="Sprites/Row1"]
+modulate = Color( 1, 1, 1, 0.0784314 )
+position = Vector2( 855, 588 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 28 )
+
+[node name="Back6" type="Sprite" parent="Sprites/Row1"]
+modulate = Color( 1, 1, 1, 0.0784314 )
+position = Vector2( 1045, 588 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 27 )
+
+[node name="Back7" type="Sprite" parent="Sprites/Row1"]
+modulate = Color( 1, 1, 1, 0.0784314 )
+position = Vector2( 1235, 588 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 26 )
+
+[node name="Row2" type="Control" parent="Sprites"]
+margin_left = -25.0
+margin_top = -223.0
+margin_right = -25.0
+margin_bottom = -223.0
+
+[node name="Back1" type="Sprite" parent="Sprites/Row2"]
+modulate = Color( 1, 1, 1, 0.0784314 )
+position = Vector2( 95, 588 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 28 )
+
+[node name="Back2" type="Sprite" parent="Sprites/Row2"]
+modulate = Color( 1, 1, 1, 0.0784314 )
+position = Vector2( 285, 588 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 27 )
+
+[node name="Back3" type="Sprite" parent="Sprites/Row2"]
+modulate = Color( 1, 1, 1, 0.0784314 )
+position = Vector2( 475, 588 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 26 )
+
+[node name="Back4" type="Sprite" parent="Sprites/Row2"]
+modulate = Color( 1, 1, 1, 0.0784314 )
+position = Vector2( 665, 588 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 28 )
+
+[node name="Back5" type="Sprite" parent="Sprites/Row2"]
+modulate = Color( 1, 1, 1, 0.0784314 )
+position = Vector2( 855, 588 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 27 )
+
+[node name="Back6" type="Sprite" parent="Sprites/Row2"]
+modulate = Color( 1, 1, 1, 0.0784314 )
+position = Vector2( 1045, 588 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 26 )
+
+[node name="Back7" type="Sprite" parent="Sprites/Row2"]
+modulate = Color( 1, 1, 1, 0.0784314 )
+position = Vector2( 1235, 588 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 28 )
+
+[node name="Row3" type="Control" parent="Sprites"]
+margin_left = -25.0
+margin_top = 43.0
+margin_right = -25.0
+margin_bottom = 43.0
+
+[node name="Back1" type="Sprite" parent="Sprites/Row3"]
+modulate = Color( 1, 1, 1, 0.0784314 )
+position = Vector2( 95, 588 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 27 )
+
+[node name="Back2" type="Sprite" parent="Sprites/Row3"]
+modulate = Color( 1, 1, 1, 0.0784314 )
+position = Vector2( 285, 588 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 26 )
+
+[node name="Back3" type="Sprite" parent="Sprites/Row3"]
+modulate = Color( 1, 1, 1, 0.0784314 )
+position = Vector2( 475, 588 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 28 )
+
+[node name="Back4" type="Sprite" parent="Sprites/Row3"]
+modulate = Color( 1, 1, 1, 0.0784314 )
+position = Vector2( 665, 588 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 27 )
+
+[node name="Back5" type="Sprite" parent="Sprites/Row3"]
+modulate = Color( 1, 1, 1, 0.0784314 )
+position = Vector2( 855, 588 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 26 )
+
+[node name="Back6" type="Sprite" parent="Sprites/Row3"]
+modulate = Color( 1, 1, 1, 0.0784314 )
+position = Vector2( 1045, 588 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 28 )
+
+[node name="Back7" type="Sprite" parent="Sprites/Row3"]
+modulate = Color( 1, 1, 1, 0.0784314 )
+position = Vector2( 1235, 588 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 27 )
+
+[node name="Credits_Container" type="MarginContainer" parent="."]
+margin_left = 150.0
+margin_right = 1130.0
+margin_bottom = 720.0
+custom_constants/margin_top = 50
+custom_constants/margin_bottom = 40
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Credits_Container"]
+margin_top = 50.0
+margin_right = 980.0
+margin_bottom = 680.0
+custom_constants/separation = 20
+
+[node name="Panel1" type="Panel" parent="Credits_Container/HBoxContainer"]
+margin_right = 313.0
+margin_bottom = 630.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 48 )
+
+[node name="VBoxContainer" type="MarginContainer" parent="Credits_Container/HBoxContainer/Panel1"]
+margin_right = 313.0
+margin_bottom = 630.0
+custom_constants/margin_right = 15
+custom_constants/margin_top = 20
+custom_constants/margin_left = 15
+custom_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Credits_Container/HBoxContainer/Panel1/VBoxContainer"]
+margin_left = 15.0
+margin_top = 20.0
+margin_right = 298.0
+margin_bottom = 610.0
+
+[node name="Label1" type="Label" parent="Credits_Container/HBoxContainer/Panel1/VBoxContainer/VBoxContainer"]
+margin_right = 283.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+custom_fonts/font = SubResource( 49 )
+text = "Made with Godot"
+align = 1
+autowrap = true
+
+[node name="Label2" type="Label" parent="Credits_Container/HBoxContainer/Panel1/VBoxContainer/VBoxContainer"]
+margin_top = 44.0
+margin_right = 283.0
+margin_bottom = 84.0
+rect_min_size = Vector2( 0, 40 )
+custom_fonts/font = SubResource( 49 )
+align = 1
+autowrap = true
+
+[node name="Label3" type="Label" parent="Credits_Container/HBoxContainer/Panel1/VBoxContainer/VBoxContainer"]
+margin_top = 88.0
+margin_right = 283.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 0, 40 )
+custom_fonts/font = SubResource( 49 )
+text = "Idea by"
+align = 1
+autowrap = true
+
+[node name="Label4" type="Label" parent="Credits_Container/HBoxContainer/Panel1/VBoxContainer/VBoxContainer"]
+margin_top = 132.0
+margin_right = 283.0
+margin_bottom = 162.0
+custom_fonts/font = SubResource( 50 )
+text = "Federico Pace"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Label5" type="Label" parent="Credits_Container/HBoxContainer/Panel1/VBoxContainer/VBoxContainer"]
+margin_top = 166.0
+margin_right = 283.0
+margin_bottom = 196.0
+custom_fonts/font = SubResource( 50 )
+text = "Pietro Assennato"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Label6" type="Label" parent="Credits_Container/HBoxContainer/Panel1/VBoxContainer/VBoxContainer"]
+margin_top = 200.0
+margin_right = 283.0
+margin_bottom = 240.0
+rect_min_size = Vector2( 0, 40 )
+custom_fonts/font = SubResource( 49 )
+align = 1
+autowrap = true
+
+[node name="Label7" type="Label" parent="Credits_Container/HBoxContainer/Panel1/VBoxContainer/VBoxContainer"]
+margin_top = 244.0
+margin_right = 283.0
+margin_bottom = 284.0
+rect_min_size = Vector2( 0, 40 )
+custom_fonts/font = SubResource( 49 )
+text = "Programmer"
+align = 1
+autowrap = true
+
+[node name="Label8" type="Label" parent="Credits_Container/HBoxContainer/Panel1/VBoxContainer/VBoxContainer"]
+margin_top = 288.0
+margin_right = 283.0
+margin_bottom = 318.0
+custom_fonts/font = SubResource( 50 )
+text = "Federico Pace"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Label9" type="Label" parent="Credits_Container/HBoxContainer/Panel1/VBoxContainer/VBoxContainer"]
+margin_top = 322.0
+margin_right = 283.0
+margin_bottom = 362.0
+rect_min_size = Vector2( 0, 40 )
+custom_fonts/font = SubResource( 49 )
+align = 1
+autowrap = true
+
+[node name="Label10" type="Label" parent="Credits_Container/HBoxContainer/Panel1/VBoxContainer/VBoxContainer"]
+margin_top = 366.0
+margin_right = 283.0
+margin_bottom = 406.0
+rect_min_size = Vector2( 0, 40 )
+custom_fonts/font = SubResource( 49 )
+text = "Card Artworks"
+align = 1
+autowrap = true
+
+[node name="Label11" type="Label" parent="Credits_Container/HBoxContainer/Panel1/VBoxContainer/VBoxContainer"]
+margin_top = 410.0
+margin_right = 283.0
+margin_bottom = 440.0
+custom_fonts/font = SubResource( 50 )
+text = "Ilaria Pace"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Label12" type="Label" parent="Credits_Container/HBoxContainer/Panel1/VBoxContainer/VBoxContainer"]
+margin_top = 444.0
+margin_right = 283.0
+margin_bottom = 484.0
+rect_min_size = Vector2( 0, 40 )
+custom_fonts/font = SubResource( 49 )
+align = 1
+autowrap = true
+
+[node name="Label13" type="Label" parent="Credits_Container/HBoxContainer/Panel1/VBoxContainer/VBoxContainer"]
+margin_top = 488.0
+margin_right = 283.0
+margin_bottom = 528.0
+rect_min_size = Vector2( 0, 40 )
+custom_fonts/font = SubResource( 49 )
+text = "Font"
+align = 1
+autowrap = true
+
+[node name="Label14" type="Label" parent="Credits_Container/HBoxContainer/Panel1/VBoxContainer/VBoxContainer"]
+margin_top = 532.0
+margin_right = 283.0
+margin_bottom = 559.0
+custom_fonts/font = SubResource( 51 )
+text = "all-free-download.com"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Panel2" type="Panel" parent="Credits_Container/HBoxContainer"]
+margin_left = 333.0
+margin_right = 646.0
+margin_bottom = 630.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 48 )
+
+[node name="VBoxContainer2" type="MarginContainer" parent="Credits_Container/HBoxContainer/Panel2"]
+margin_right = 313.0
+margin_bottom = 630.0
+custom_constants/margin_right = 15
+custom_constants/margin_top = 20
+custom_constants/margin_left = 15
+custom_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Credits_Container/HBoxContainer/Panel2/VBoxContainer2"]
+margin_left = 15.0
+margin_top = 20.0
+margin_right = 298.0
+margin_bottom = 610.0
+
+[node name="Label1" type="Label" parent="Credits_Container/HBoxContainer/Panel2/VBoxContainer2/VBoxContainer"]
+margin_right = 283.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+custom_fonts/font = SubResource( 49 )
+text = "Music"
+align = 1
+autowrap = true
+
+[node name="Label2" type="Label" parent="Credits_Container/HBoxContainer/Panel2/VBoxContainer2/VBoxContainer"]
+margin_top = 44.0
+margin_right = 283.0
+margin_bottom = 71.0
+custom_fonts/font = SubResource( 51 )
+text = "Cyberwave-Orchestra"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Label3" type="Label" parent="Credits_Container/HBoxContainer/Panel2/VBoxContainer2/VBoxContainer"]
+margin_top = 75.0
+margin_right = 283.0
+margin_bottom = 115.0
+rect_min_size = Vector2( 0, 40 )
+custom_fonts/font = SubResource( 49 )
+align = 1
+autowrap = true
+
+[node name="Label4" type="Label" parent="Credits_Container/HBoxContainer/Panel2/VBoxContainer2/VBoxContainer"]
+margin_top = 119.0
+margin_right = 283.0
+margin_bottom = 171.0
+rect_min_size = Vector2( 0, 52 )
+custom_fonts/font = SubResource( 49 )
+text = "Sounds"
+align = 1
+autowrap = true
+
+[node name="Label5" type="Label" parent="Credits_Container/HBoxContainer/Panel2/VBoxContainer2/VBoxContainer"]
+margin_top = 175.0
+margin_right = 283.0
+margin_bottom = 215.0
+rect_min_size = Vector2( 0, 40 )
+custom_fonts/font = SubResource( 52 )
+text = "opengameart.org"
+align = 1
+autowrap = true
+
+[node name="Label6" type="Label" parent="Credits_Container/HBoxContainer/Panel2/VBoxContainer2/VBoxContainer"]
+margin_top = 219.0
+margin_right = 283.0
+margin_bottom = 273.0
+custom_constants/line_spacing = -6
+custom_fonts/font = SubResource( 50 )
+text = "Fourier /
+Third Octave"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Label7" type="Label" parent="Credits_Container/HBoxContainer/Panel2/VBoxContainer2/VBoxContainer"]
+margin_top = 277.0
+margin_right = 283.0
+margin_bottom = 307.0
+custom_fonts/font = SubResource( 50 )
+text = "Kenney.nl"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Label8" type="Label" parent="Credits_Container/HBoxContainer/Panel2/VBoxContainer2/VBoxContainer"]
+margin_top = 311.0
+margin_right = 283.0
+margin_bottom = 325.0
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Label9" type="Label" parent="Credits_Container/HBoxContainer/Panel2/VBoxContainer2/VBoxContainer"]
+margin_top = 329.0
+margin_right = 283.0
+margin_bottom = 369.0
+rect_min_size = Vector2( 0, 40 )
+custom_fonts/font = SubResource( 52 )
+text = "pixabay.com"
+align = 1
+autowrap = true
+
+[node name="Label10" type="Label" parent="Credits_Container/HBoxContainer/Panel2/VBoxContainer2/VBoxContainer"]
+margin_top = 373.0
+margin_right = 283.0
+margin_bottom = 403.0
+custom_fonts/font = SubResource( 50 )
+text = "floraphonic"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Label11" type="Label" parent="Credits_Container/HBoxContainer/Panel2/VBoxContainer2/VBoxContainer"]
+margin_top = 407.0
+margin_right = 283.0
+margin_bottom = 437.0
+custom_fonts/font = SubResource( 50 )
+text = "VoiceBosch"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Label12" type="Label" parent="Credits_Container/HBoxContainer/Panel2/VBoxContainer2/VBoxContainer"]
+margin_top = 441.0
+margin_right = 283.0
+margin_bottom = 471.0
+custom_fonts/font = SubResource( 50 )
+text = "aiko Changing"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Label13" type="Label" parent="Credits_Container/HBoxContainer/Panel2/VBoxContainer2/VBoxContainer"]
+margin_top = 475.0
+margin_right = 283.0
+margin_bottom = 505.0
+custom_fonts/font = SubResource( 50 )
+text = "UNIVERSFIELD"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Label14" type="Label" parent="Credits_Container/HBoxContainer/Panel2/VBoxContainer2/VBoxContainer"]
+margin_top = 509.0
+margin_right = 283.0
+margin_bottom = 523.0
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Label15" type="Label" parent="Credits_Container/HBoxContainer/Panel2/VBoxContainer2/VBoxContainer"]
+margin_top = 527.0
+margin_right = 283.0
+margin_bottom = 567.0
+rect_min_size = Vector2( 0, 40 )
+custom_fonts/font = SubResource( 52 )
+text = "mixkit.co"
+align = 1
+autowrap = true
+
+[node name="Panel3" type="Panel" parent="Credits_Container/HBoxContainer"]
+margin_left = 666.0
+margin_right = 980.0
+margin_bottom = 630.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 48 )
+
+[node name="VBoxContainer2" type="MarginContainer" parent="Credits_Container/HBoxContainer/Panel3"]
+margin_right = 313.0
+margin_bottom = 630.0
+custom_constants/margin_right = 15
+custom_constants/margin_top = 20
+custom_constants/margin_left = 15
+custom_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Credits_Container/HBoxContainer/Panel3/VBoxContainer2"]
+margin_left = 15.0
+margin_top = 20.0
+margin_right = 298.0
+margin_bottom = 612.0
+
+[node name="Label1" type="Label" parent="Credits_Container/HBoxContainer/Panel3/VBoxContainer2/VBoxContainer"]
+margin_right = 283.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+custom_fonts/font = SubResource( 49 )
+text = "Special Thanks"
+align = 1
+autowrap = true
+
+[node name="Label2" type="Label" parent="Credits_Container/HBoxContainer/Panel3/VBoxContainer2/VBoxContainer"]
+margin_top = 44.0
+margin_right = 283.0
+margin_bottom = 74.0
+custom_fonts/font = SubResource( 50 )
+text = "Francesco Papale"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Label3" type="Label" parent="Credits_Container/HBoxContainer/Panel3/VBoxContainer2/VBoxContainer"]
+margin_top = 78.0
+margin_right = 283.0
+margin_bottom = 128.0
+custom_constants/line_spacing = -10
+custom_fonts/font = SubResource( 50 )
+text = "Gabriele Zappaterreno"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Label4" type="Label" parent="Credits_Container/HBoxContainer/Panel3/VBoxContainer2/VBoxContainer"]
+margin_top = 132.0
+margin_right = 283.0
+margin_bottom = 162.0
+custom_fonts/font = SubResource( 50 )
+text = "Matteo Fiori"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Label5" type="Label" parent="Credits_Container/HBoxContainer/Panel3/VBoxContainer2/VBoxContainer"]
+margin_top = 166.0
+margin_right = 283.0
+margin_bottom = 196.0
+custom_fonts/font = SubResource( 50 )
+text = "Francesco Schembri"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Label6" type="Label" parent="Credits_Container/HBoxContainer/Panel3/VBoxContainer2/VBoxContainer"]
+margin_top = 200.0
+margin_right = 283.0
+margin_bottom = 230.0
+custom_fonts/font = SubResource( 50 )
+text = "Simone Donatelli"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Label7" type="Label" parent="Credits_Container/HBoxContainer/Panel3/VBoxContainer2/VBoxContainer"]
+margin_top = 234.0
+margin_right = 283.0
+margin_bottom = 274.0
+rect_min_size = Vector2( 0, 40 )
+custom_fonts/font = SubResource( 49 )
+align = 1
+autowrap = true
+
+[node name="Label8" type="Label" parent="Credits_Container/HBoxContainer/Panel3/VBoxContainer2/VBoxContainer"]
+margin_top = 278.0
+margin_right = 283.0
+margin_bottom = 318.0
+rect_min_size = Vector2( 0, 40 )
+custom_fonts/font = SubResource( 49 )
+align = 1
+autowrap = true
+
+[node name="Label9" type="Label" parent="Credits_Container/HBoxContainer/Panel3/VBoxContainer2/VBoxContainer"]
+margin_top = 322.0
+margin_right = 283.0
+margin_bottom = 592.0
+rect_min_size = Vector2( 0, 40 )
+custom_fonts/font = SubResource( 49 )
+text = "Made for the \"Mobile Computing\" 11/2024 Exam
+by
+Federico Pace
+(mat 564596)"
+align = 1
+autowrap = true
+
+[connection signal="pressed" from="Utility_Buttons/Back/Back_Button" to="." method="_back"]
+[connection signal="pressed" from="Utility_Buttons/Settings/Settings_Button" to="Utility_Buttons/Settings/Scene_Cover" method="_cover_scene"]
+[connection signal="pressed" from="Utility_Buttons/Settings/Settings_Button" to="Utility_Buttons/Settings/Settings_Menu" method="_Pull_Up_Settings"]
+[connection signal="pressed" from="Utility_Buttons/Settings/Settings_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Profile" to="Utility_Buttons/Settings/Profile_Menu" method="_Pull_Up_Profile"]
+[connection signal="pressed" from="Utility_Buttons/Settings/Settings_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Audio" to="Utility_Buttons/Settings/Audio_Menu" method="_Pull_Up_Audio"]
+[connection signal="pressed" from="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Name/Change_Name" to="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Name" method="change_name"]
+[connection signal="pressed" from="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Title/Change_Title" to="Utility_Buttons/Settings/Title_List" method="_pull_up"]
+[connection signal="pressed" from="Utility_Buttons/Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Avatar/Change_Avatar" to="Utility_Buttons/Settings/Avatar_List" method="_pull_up"]

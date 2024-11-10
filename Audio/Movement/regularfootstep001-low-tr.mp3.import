@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/regularfootstep001-low-tr.mp3-0f97ae04974547dde49ca54af0720f45.mp3str"
+
+[deps]
+
+source_file="res://Audio/Movement/regularfootstep001-low-tr.mp3"
+dest_files=[ "res://.import/regularfootstep001-low-tr.mp3-0f97ae04974547dde49ca54af0720f45.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

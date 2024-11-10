@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/jobro_heartbeat.mp3-eb75cb696d584691688ebd83a3853efd.mp3str"
+
+[deps]
+
+source_file="res://Audio/Others/jobro_heartbeat.mp3"
+dest_files=[ "res://.import/jobro_heartbeat.mp3-eb75cb696d584691688ebd83a3853efd.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/shuffle.mp3-950858121dcbed62e46441e96be1e22e.mp3str"
+
+[deps]
+
+source_file="res://Audio/Cards/shuffle.mp3"
+dest_files=[ "res://.import/shuffle.mp3-950858121dcbed62e46441e96be1e22e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

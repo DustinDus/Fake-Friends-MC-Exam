@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/interface-1-red.mp3-19bcd5c121559113bd6176c22840f4f5.mp3str"
+
+[deps]
+
+source_file="res://Audio/Cards/interface-1-red.mp3"
+dest_files=[ "res://.import/interface-1-red.mp3-19bcd5c121559113bd6176c22840f4f5.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

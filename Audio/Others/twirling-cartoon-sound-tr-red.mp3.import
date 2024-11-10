@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/twirling-cartoon-sound-tr-red.mp3-6e835662d53bf960dbada113fbd5fad3.mp3str"
+
+[deps]
+
+source_file="res://Audio/Others/twirling-cartoon-sound-tr-red.mp3"
+dest_files=[ "res://.import/twirling-cartoon-sound-tr-red.mp3-6e835662d53bf960dbada113fbd5fad3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

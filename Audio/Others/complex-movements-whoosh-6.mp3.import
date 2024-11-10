@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/complex-movements-whoosh-6.mp3-af2c5dac30ff909058018901fa879693.mp3str"
+
+[deps]
+
+source_file="res://Audio/Others/complex-movements-whoosh-6.mp3"
+dest_files=[ "res://.import/complex-movements-whoosh-6.mp3-af2c5dac30ff909058018901fa879693.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/card-place-4-tr.mp3-7d0bf771919d0e2450d64268b0bf9f26.mp3str"
+
+[deps]
+
+source_file="res://Audio/Cards/card-place-4-tr.mp3"
+dest_files=[ "res://.import/card-place-4-tr.mp3-7d0bf771919d0e2450d64268b0bf9f26.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

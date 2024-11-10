@@ -1,0 +1,773 @@
+[gd_scene load_steps=32 format=2]
+
+[ext_resource path="res://nano.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Main_Scene/Textures/Utility Buttons/Back.png" type="Texture" id=2]
+[ext_resource path="res://Main_Scene/Textures/Utility Buttons/Back_Pressed.png" type="Texture" id=3]
+[ext_resource path="res://Main_Scene/Textures/Utility Buttons/Back_Hover.png" type="Texture" id=4]
+[ext_resource path="res://My_Stats_Scene/My_Stats.gd" type="Script" id=5]
+[ext_resource path="res://Unlockable_Stuff/Avatars/Anonymous_Player.png" type="Texture" id=6]
+[ext_resource path="res://My_Stats_Scene/Textures/ResetButton_Hover.png" type="Texture" id=7]
+[ext_resource path="res://My_Stats_Scene/Textures/ResetButton.png" type="Texture" id=8]
+[ext_resource path="res://My_Stats_Scene/Textures/ResetButton_Pressed.png" type="Texture" id=9]
+[ext_resource path="res://My_Stats_Scene/Scripts/Reset_Options.gd" type="Script" id=10]
+[ext_resource path="res://My_Stats_Scene/Scripts/True_Reset_Button.gd" type="Script" id=11]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Touch_Scroll.gd" type="Script" id=12]
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.784314, 0.784314, 0.784314, 1 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+corner_radius_bottom_left = 1024
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id=19]
+bg_color = Color( 0.4, 0.4, 0.4, 1 )
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color( 1, 0, 0, 1 )
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="DynamicFont" id=20]
+size = 40
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=21]
+size = 50
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=22]
+bg_color = Color( 1, 0.607843, 0.607843, 1 )
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id=23]
+bg_color = Color( 0.862745, 0.705882, 0.705882, 1 )
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.490196, 0.490196, 0.490196, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=24]
+bg_color = Color( 0.2, 0.2, 0.2, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_top = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="DynamicFont" id=5]
+size = 26
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0.666667, 0.666667, 0.666667, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=12]
+size = 50
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=15]
+size = 26
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=16]
+bg_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id=17]
+bg_color = Color( 1, 1, 1, 1 )
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="DynamicFont" id=18]
+size = 24
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 1 )
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 0.784314, 0.784314, 0.784314, 1 )
+corner_radius_bottom_left = 10
+corner_detail = 20
+
+[node name="My_Info" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 5 )
+
+[node name="Background" type="ParallaxBackground" parent="."]
+
+[node name="Solid_Color" type="Panel" parent="Background"]
+margin_right = 1280.0
+margin_bottom = 720.0
+custom_styles/panel = SubResource( 6 )
+
+[node name="Utility_Buttons" type="CanvasLayer" parent="."]
+
+[node name="Panel_Right" type="Panel" parent="Utility_Buttons"]
+margin_left = 929.0
+margin_right = 1046.0
+margin_bottom = 112.0
+rect_scale = Vector2( 3, 1 )
+custom_styles/panel = SubResource( 9 )
+
+[node name="Back_Button" type="TextureButton" parent="Utility_Buttons"]
+margin_left = 1185.0
+margin_top = 15.0
+margin_right = 1385.0
+margin_bottom = 215.0
+rect_scale = Vector2( 0.4, 0.4 )
+focus_mode = 0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+texture_disabled = ExtResource( 2 )
+
+[node name="Reset_Button" type="TextureButton" parent="Utility_Buttons"]
+margin_left = 985.0
+margin_top = 15.0
+margin_right = 1385.0
+margin_bottom = 215.0
+rect_scale = Vector2( 0.4, 0.4 )
+focus_mode = 0
+texture_normal = ExtResource( 8 )
+texture_pressed = ExtResource( 9 )
+texture_hover = ExtResource( 7 )
+texture_disabled = ExtResource( 8 )
+
+[node name="Scene_Cover" type="Panel" parent="Utility_Buttons"]
+visible = false
+modulate = Color( 1, 1, 1, 0.8 )
+margin_left = 0.200012
+margin_top = 0.2
+margin_right = 3199.2
+margin_bottom = 1799.2
+
+[node name="Reset_Options" type="Panel" parent="Utility_Buttons"]
+visible = false
+margin_left = 361.0
+margin_top = 100.0
+margin_right = 921.0
+margin_bottom = 600.0
+custom_styles/panel = SubResource( 19 )
+script = ExtResource( 10 )
+
+[node name="Label1" type="Label" parent="Utility_Buttons/Reset_Options"]
+margin_top = 54.0
+margin_right = 560.0
+margin_bottom = 145.0
+custom_fonts/font = SubResource( 20 )
+text = "Would you like
+to reset your stats?"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Label2" type="Label" parent="Utility_Buttons/Reset_Options"]
+margin_top = 159.0
+margin_right = 560.0
+margin_bottom = 297.0
+custom_colors/font_color = Color( 1, 0.564706, 0.564706, 1 )
+custom_fonts/font = SubResource( 20 )
+text = "This will also reset
+any titles and avatars
+you previously unlocked."
+align = 1
+valign = 1
+
+[node name="True_Reset_Button" type="Button" parent="Utility_Buttons/Reset_Options"]
+margin_left = 123.0
+margin_top = 339.0
+margin_right = 438.0
+margin_bottom = 429.0
+focus_mode = 0
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0.8, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0.8, 0, 0, 1 )
+custom_fonts/font = SubResource( 21 )
+custom_styles/hover = SubResource( 22 )
+custom_styles/pressed = SubResource( 22 )
+custom_styles/disabled = SubResource( 23 )
+custom_styles/normal = SubResource( 23 )
+text = "RESET"
+script = ExtResource( 11 )
+
+[node name="Stats_List" type="MarginContainer" parent="."]
+margin_right = 870.0
+margin_bottom = 720.0
+
+[node name="Panel" type="Panel" parent="Stats_List"]
+margin_right = 870.0
+margin_bottom = 720.0
+custom_styles/panel = SubResource( 10 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Stats_List/Panel"]
+margin_right = 869.0
+margin_bottom = 720.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="Panel" type="Panel" parent="Stats_List/Panel/MarginContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 859.0
+margin_bottom = 710.0
+custom_styles/panel = SubResource( 8 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Stats_List/Panel/MarginContainer/Panel"]
+margin_right = 860.0
+margin_bottom = 700.0
+custom_constants/margin_right = 35
+custom_constants/margin_top = 30
+custom_constants/margin_left = 16
+custom_constants/margin_bottom = 30
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer"]
+margin_left = 16.0
+margin_top = 30.0
+margin_right = 825.0
+margin_bottom = 670.0
+script = ExtResource( 12 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer"]
+margin_right = 797.0
+margin_bottom = 1008.0
+mouse_filter = 1
+size_flags_horizontal = 3
+custom_constants/margin_right = 10
+custom_constants/margin_top = 5
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer"]
+margin_left = 10.0
+margin_top = 5.0
+margin_right = 787.0
+margin_bottom = 1003.0
+rect_pivot_offset = Vector2( -145, 248 )
+size_flags_horizontal = 3
+custom_constants/separation = 10
+
+[node name="Panel1" type="Panel" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_right = 777.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 0, 32 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 24 )
+
+[node name="Games_Played" type="Label" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Panel1"]
+margin_left = 11.0
+margin_right = 788.0
+margin_bottom = 30.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 5 )
+text = "Games Played: ?"
+
+[node name="Panel2" type="Panel" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 42.0
+margin_right = 777.0
+margin_bottom = 74.0
+rect_min_size = Vector2( 0, 32 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 24 )
+
+[node name="Games_Won" type="Label" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Panel2"]
+margin_left = 11.0
+margin_right = 725.0
+margin_bottom = 30.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 5 )
+text = "Games Won: ?"
+
+[node name="Panel3" type="Panel" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 84.0
+margin_right = 777.0
+margin_bottom = 116.0
+rect_min_size = Vector2( 0, 32 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 24 )
+
+[node name="Games_Lost" type="Label" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Panel3"]
+margin_left = 11.0
+margin_right = 725.0
+margin_bottom = 30.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 5 )
+text = "Games Lost: ?"
+
+[node name="Panel4" type="Panel" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 126.0
+margin_right = 777.0
+margin_bottom = 158.0
+rect_min_size = Vector2( 0, 32 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 24 )
+
+[node name="Shortest_Game_Played" type="Label" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Panel4"]
+margin_left = 11.0
+margin_right = 725.0
+margin_bottom = 30.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 5 )
+text = "Shortest Game Played: ?"
+
+[node name="Panel5" type="Panel" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 168.0
+margin_right = 777.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 0, 32 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 24 )
+
+[node name="Longest_Game_Played" type="Label" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Panel5"]
+margin_left = 11.0
+margin_right = 725.0
+margin_bottom = 30.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 5 )
+text = "Longest Game Played: ?"
+
+[node name="Panel6" type="Panel" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 210.0
+margin_right = 777.0
+margin_bottom = 242.0
+rect_min_size = Vector2( 0, 32 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 24 )
+
+[node name="Games_Quit" type="Label" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Panel6"]
+margin_left = 11.0
+margin_right = 725.0
+margin_bottom = 30.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 5 )
+text = "Games Quit: ?"
+
+[node name="Panel7" type="Panel" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 252.0
+margin_right = 777.0
+margin_bottom = 284.0
+rect_min_size = Vector2( 0, 32 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 24 )
+
+[node name="Tiles_Traveled" type="Label" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Panel7"]
+margin_left = 10.0
+margin_right = 724.0
+margin_bottom = 30.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 5 )
+text = "Tiles Traveled: ?"
+
+[node name="Panel8" type="Panel" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 294.0
+margin_right = 777.0
+margin_bottom = 326.0
+rect_min_size = Vector2( 0, 32 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 24 )
+
+[node name="Times_Sent_to_Start" type="Label" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Panel8"]
+margin_left = 10.0
+margin_right = 724.0
+margin_bottom = 30.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 5 )
+text = "Times you where sent back to the Start: ?"
+
+[node name="Panel9" type="Panel" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 336.0
+margin_right = 777.0
+margin_bottom = 368.0
+rect_min_size = Vector2( 0, 32 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 24 )
+
+[node name="Times_Jailed" type="Label" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Panel9"]
+margin_left = 10.0
+margin_right = 724.0
+margin_bottom = 30.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 5 )
+text = "Times you where jailed: ?"
+
+[node name="Panel10" type="Panel" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 378.0
+margin_right = 777.0
+margin_bottom = 410.0
+rect_min_size = Vector2( 0, 32 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 24 )
+
+[node name="Opponent_Back" type="Label" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Panel10"]
+margin_left = 10.0
+margin_right = 760.0
+margin_bottom = 30.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 5 )
+text = "Tiles you made others players go back: ?"
+
+[node name="Panel11" type="Panel" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 420.0
+margin_right = 777.0
+margin_bottom = 452.0
+rect_min_size = Vector2( 0, 32 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 24 )
+
+[node name="Opponent_Start" type="Label" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Panel11"]
+margin_left = 10.0
+margin_right = 770.0
+margin_bottom = 30.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 5 )
+text = "Times you sent another player back to the start: ?"
+
+[node name="Panel12" type="Panel" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 462.0
+margin_right = 777.0
+margin_bottom = 494.0
+rect_min_size = Vector2( 0, 32 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 24 )
+
+[node name="Red_Draws" type="Label" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Panel12"]
+margin_left = 11.0
+margin_right = 498.0
+margin_bottom = 30.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 5 )
+text = "Red Cards Drawn: ?"
+
+[node name="Panel13" type="Panel" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 504.0
+margin_right = 777.0
+margin_bottom = 536.0
+rect_min_size = Vector2( 0, 32 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 24 )
+
+[node name="Black_Draws" type="Label" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Panel13"]
+margin_left = 11.0
+margin_right = 498.0
+margin_bottom = 30.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 5 )
+text = "Black Cards Drawn: ?"
+
+[node name="Panel14" type="Panel" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 546.0
+margin_right = 777.0
+margin_bottom = 578.0
+rect_min_size = Vector2( 0, 32 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 24 )
+
+[node name="Orange_Draws" type="Label" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Panel14"]
+margin_left = 11.0
+margin_right = 498.0
+margin_bottom = 30.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 5 )
+text = "Orange Cards Drawn: ?"
+
+[node name="Panel15" type="Panel" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 588.0
+margin_right = 777.0
+margin_bottom = 620.0
+rect_min_size = Vector2( 0, 32 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 24 )
+
+[node name="Red_Activated" type="Label" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Panel15"]
+margin_left = 11.0
+margin_right = 498.0
+margin_bottom = 30.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 5 )
+text = "Red Cards Activated: ?"
+
+[node name="Panel16" type="Panel" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 630.0
+margin_right = 777.0
+margin_bottom = 662.0
+rect_min_size = Vector2( 0, 32 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 24 )
+
+[node name="Combos_Activated" type="Label" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Panel16"]
+margin_left = 11.0
+margin_right = 498.0
+margin_bottom = 30.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 5 )
+text = "Combos Activated: ?"
+
+[node name="Panel17" type="Panel" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 672.0
+margin_right = 777.0
+margin_bottom = 704.0
+rect_min_size = Vector2( 0, 32 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 24 )
+
+[node name="Reactions_Activated" type="Label" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Panel17"]
+margin_left = 11.0
+margin_right = 498.0
+margin_bottom = 30.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 5 )
+text = "Reactions Activated: ?"
+
+[node name="Panel18" type="Panel" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 714.0
+margin_right = 777.0
+margin_bottom = 746.0
+rect_min_size = Vector2( 0, 32 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 24 )
+
+[node name="Red_Negated" type="Label" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Panel18"]
+margin_left = 11.0
+margin_right = 498.0
+margin_bottom = 30.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 5 )
+text = "Red Cards Negated: ?"
+
+[node name="Panel19" type="Panel" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 756.0
+margin_right = 777.0
+margin_bottom = 788.0
+rect_min_size = Vector2( 0, 32 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 24 )
+
+[node name="Black_Negated" type="Label" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Panel19"]
+margin_left = 11.0
+margin_right = 498.0
+margin_bottom = 30.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 5 )
+text = "Black Cards Negated: ?"
+
+[node name="Panel20" type="Panel" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 798.0
+margin_right = 777.0
+margin_bottom = 830.0
+rect_min_size = Vector2( 0, 32 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 24 )
+
+[node name="Orange_Negated" type="Label" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Panel20"]
+margin_left = 11.0
+margin_right = 498.0
+margin_bottom = 30.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 5 )
+text = "Orange Cards Negated: ?"
+
+[node name="Panel21" type="Panel" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 840.0
+margin_right = 777.0
+margin_bottom = 872.0
+rect_min_size = Vector2( 0, 32 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 24 )
+
+[node name="Cards_Stolen" type="Label" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Panel21"]
+margin_left = 11.0
+margin_right = 498.0
+margin_bottom = 30.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 5 )
+text = "Cards Stolen From Other Players: ?"
+
+[node name="Panel22" type="Panel" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 882.0
+margin_right = 777.0
+margin_bottom = 914.0
+rect_min_size = Vector2( 0, 32 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 24 )
+
+[node name="Cards_Discarded" type="Label" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Panel22"]
+margin_left = 11.0
+margin_right = 295.0
+margin_bottom = 30.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 5 )
+text = "Cards Discarded: ?"
+
+[node name="Panel23" type="Panel" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 924.0
+margin_right = 777.0
+margin_bottom = 956.0
+rect_min_size = Vector2( 0, 32 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 24 )
+
+[node name="Turns_Skipped" type="Label" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Panel23"]
+margin_left = 10.0
+margin_right = 294.0
+margin_bottom = 30.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 5 )
+text = "Turns Skipped: ?"
+
+[node name="Panel24" type="Panel" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
+margin_top = 966.0
+margin_right = 777.0
+margin_bottom = 998.0
+rect_min_size = Vector2( 0, 32 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 24 )
+
+[node name="Time" type="Label" parent="Stats_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer/Panel24"]
+margin_left = 10.0
+margin_right = 294.0
+margin_bottom = 30.0
+mouse_filter = 1
+custom_fonts/font = SubResource( 5 )
+text = "Time Wasted Here: ?"
+
+[node name="Main_Info" type="MarginContainer" parent="."]
+margin_left = 860.0
+margin_top = 112.0
+margin_right = 1280.0
+margin_bottom = 720.0
+
+[node name="Panel" type="Panel" parent="Main_Info"]
+margin_right = 420.0
+margin_bottom = 608.0
+custom_styles/panel = SubResource( 10 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Main_Info/Panel"]
+margin_left = 1.0
+margin_right = 419.0
+margin_bottom = 610.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+
+[node name="Panel" type="Panel" parent="Main_Info/Panel/MarginContainer"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 408.0
+margin_bottom = 600.0
+custom_styles/panel = SubResource( 8 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Main_Info/Panel/MarginContainer/Panel"]
+margin_right = 398.0
+margin_bottom = 590.0
+custom_constants/margin_right = 25
+custom_constants/margin_top = 30
+custom_constants/margin_left = 25
+custom_constants/margin_bottom = 30
+
+[node name="Panel" type="Panel" parent="Main_Info/Panel/MarginContainer/Panel/MarginContainer"]
+margin_left = 25.0
+margin_top = 30.0
+margin_right = 373.0
+margin_bottom = 560.0
+custom_styles/panel = SubResource( 11 )
+
+[node name="Username" type="Label" parent="Main_Info/Panel/MarginContainer/Panel/MarginContainer/Panel"]
+margin_top = 30.0
+margin_right = 349.0
+margin_bottom = 85.0
+custom_fonts/font = SubResource( 12 )
+text = "Player"
+align = 1
+valign = 1
+
+[node name="Label" type="Label" parent="Main_Info/Panel/MarginContainer/Panel/MarginContainer/Panel"]
+margin_top = 95.0
+margin_right = 348.0
+margin_bottom = 125.0
+custom_fonts/font = SubResource( 15 )
+text = "Current Title"
+align = 1
+valign = 1
+
+[node name="Avatar_Border_1" type="Panel" parent="Main_Info/Panel/MarginContainer/Panel/MarginContainer/Panel"]
+margin_left = 54.0
+margin_top = 145.0
+margin_right = 294.0
+margin_bottom = 385.0
+custom_styles/panel = SubResource( 16 )
+
+[node name="Avatar_Border_2" type="Panel" parent="Main_Info/Panel/MarginContainer/Panel/MarginContainer/Panel/Avatar_Border_1"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 232.0
+margin_bottom = 232.0
+custom_styles/panel = SubResource( 17 )
+
+[node name="Sprite" type="Sprite" parent="Main_Info/Panel/MarginContainer/Panel/MarginContainer/Panel/Avatar_Border_1/Avatar_Border_2"]
+position = Vector2( 112, 112 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 6 )
+
+[node name="Titles" type="Label" parent="Main_Info/Panel/MarginContainer/Panel/MarginContainer/Panel"]
+margin_top = 420.0
+margin_right = 348.0
+margin_bottom = 447.0
+custom_fonts/font = SubResource( 18 )
+text = "?/20 Titles Unlocked"
+align = 1
+valign = 1
+
+[node name="Avatars" type="Label" parent="Main_Info/Panel/MarginContainer/Panel/MarginContainer/Panel"]
+margin_top = 450.0
+margin_right = 348.0
+margin_bottom = 477.0
+custom_fonts/font = SubResource( 18 )
+text = "?/20 Avatars Unlocked"
+align = 1
+valign = 1
+
+[node name="Fix_Panel" type="Panel" parent="."]
+margin_left = 870.0
+margin_right = 1280.0
+margin_bottom = 112.0
+custom_styles/panel = SubResource( 13 )
+
+[node name="Smoll_Fix" type="Panel" parent="Fix_Panel"]
+margin_right = 410.0
+margin_bottom = 112.0
+custom_styles/panel = SubResource( 14 )
+
+[connection signal="pressed" from="Utility_Buttons/Back_Button" to="." method="_back"]
+[connection signal="pressed" from="Utility_Buttons/Reset_Button" to="Utility_Buttons/Reset_Options" method="_pull_up"]

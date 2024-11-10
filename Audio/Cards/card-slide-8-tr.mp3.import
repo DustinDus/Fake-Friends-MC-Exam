@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/card-slide-8-tr.mp3-4402a11378c0b4731aa1f14f868726b3.mp3str"
+
+[deps]
+
+source_file="res://Audio/Cards/card-slide-8-tr.mp3"
+dest_files=[ "res://.import/card-slide-8-tr.mp3-4402a11378c0b4731aa1f14f868726b3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

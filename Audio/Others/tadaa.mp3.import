@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/tadaa.mp3-9641cb34b932fb1cadd5240cd1dcc984.mp3str"
+
+[deps]
+
+source_file="res://Audio/Others/tadaa.mp3"
+dest_files=[ "res://.import/tadaa.mp3-9641cb34b932fb1cadd5240cd1dcc984.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
