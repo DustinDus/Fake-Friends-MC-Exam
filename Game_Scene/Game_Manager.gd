@@ -397,6 +397,7 @@ func move_card_pawn(v: int):
 		correction_vector = old_tile_pos - old_pawn_pos
 		# Moves the pawn and updates the old_tile_pos var
 		new_pos = mapManager.get_tile_pos(old_pawn_tile+u)
+		AudioController.play_regularfootstep001() # Sound
 		if new_pos!=old_pawn_pos:
 			yield(tweener.move_pawn(playerManager.get_card_pawn(), new_pos - correction_vector), "completed")
 			old_pawn_tile+=u

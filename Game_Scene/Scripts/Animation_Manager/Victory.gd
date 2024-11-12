@@ -102,7 +102,7 @@ func _show_stats(p: int):
 func get_color(id: int) -> Color:
 	match id:
 		RED: return Color.red
-		BLUE: return Color.blue
+		BLUE: return Color.dodgerblue
 		GREEN: return Color.green
 		YELLOW: return Color.yellow
 		_:

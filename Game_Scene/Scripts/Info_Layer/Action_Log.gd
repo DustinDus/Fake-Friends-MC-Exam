@@ -35,7 +35,7 @@ func add_line(text: String, color: int = -1):
 	match color:
 		-1: pass
 		0: new_line.add_color_override("font_color",Color.red)
-		1: new_line.add_color_override("font_color",Color.blue)
+		1: new_line.add_color_override("font_color",Color.dodgerblue)
 		2: new_line.add_color_override("font_color",Color.green)
 		3: new_line.add_color_override("font_color",Color.yellow)
 		4: new_line.add_color_override("font_color",Color.lightcoral)

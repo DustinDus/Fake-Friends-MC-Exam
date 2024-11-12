@@ -2190,7 +2190,7 @@ size = 26
 font_data = ExtResource( 22 )
 
 [sub_resource type="StyleBoxFlat" id=14]
-bg_color = Color( 1, 0.976471, 0.545098, 1 )
+bg_color = Color( 0.941176, 0.941176, 0.568627, 1 )
 border_width_top = 1
 border_width_right = 1
 border_width_bottom = 1
@@ -5801,7 +5801,7 @@ text = "Red's Tile: 1"
 margin_top = 29.0
 margin_right = 173.0
 margin_bottom = 54.0
-custom_colors/font_color = Color( 0, 0, 1, 1 )
+custom_colors/font_color = Color( 0.117647, 0.564706, 1, 1 )
 custom_fonts/font = SubResource( 45 )
 text = "Blue's Tile: 1"
 

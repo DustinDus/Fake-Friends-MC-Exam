@@ -19,6 +19,7 @@ func translate():
 	$Settings/Profile_Menu/Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Player_Avatar.translate()
 	$Settings/Title_List.translate()
 	$Settings/Avatar_List.translate()
+	$Settings/Audio_Menu.translate()
 
 func appear():
 	var tween = create_tween().set_trans(Tween.TRANS_QUINT).set_ease(Tween.EASE_OUT)

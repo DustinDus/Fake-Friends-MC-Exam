@@ -18,6 +18,13 @@ func initialize(direction: int):
 	$Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Master/HSlider.initialize("Master")
 	$Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Music/HSlider.initialize("Music")
 	$Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Sound/HSlider.initialize("Sound")
+	$Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Music/Label.text = tr("MUSIC")
+	$Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Sound/Label.text = tr("SOUND")
+
+# Translation
+func translate():
+	$Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Music/Label.text = tr("MUSIC")
+	$Panel/MarginContainer/Panel/MarginContainer/VBoxContainer/Sound/Label.text = tr("SOUND")
 
 # Pulls up menu
 func _Pull_Up_Audio():
