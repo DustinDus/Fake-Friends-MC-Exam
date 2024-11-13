@@ -1,4 +1,4 @@
-[gd_scene load_steps=100 format=2]
+[gd_scene load_steps=101 format=2]
 
 [ext_resource path="res://Bot_Game_Setup_Scene/Bot_Game_Setup.gd" type="Script" id=1]
 [ext_resource path="res://Main_Scene/Textures/Utility Buttons/Back.png" type="Texture" id=2]
@@ -29,6 +29,7 @@
 [ext_resource path="res://Main_Scene/Textures/Sliders/Slider.png" type="Texture" id=27]
 [ext_resource path="res://Main_Scene/Textures/Sliders/Slider_Focus.png" type="Texture" id=28]
 [ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Audio_Menu.gd" type="Script" id=29]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Scrolly_Button.gd" type="Script" id=30]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.784314, 0.784314, 0.784314, 1 )
@@ -1013,6 +1014,7 @@ custom_styles/focus = SubResource( 145 )
 custom_styles/disabled = SubResource( 145 )
 custom_styles/normal = SubResource( 146 )
 text = "Anonymous Player"
+script = ExtResource( 30 )
 
 [node name="Locked_Panel" type="Panel" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
 visible = false
@@ -1157,6 +1159,7 @@ custom_styles/focus = SubResource( 154 )
 custom_styles/disabled = SubResource( 154 )
 custom_styles/normal = SubResource( 155 )
 text = "Change"
+script = ExtResource( 30 )
 
 [node name="Locked_Panel" type="Panel" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
 visible = false

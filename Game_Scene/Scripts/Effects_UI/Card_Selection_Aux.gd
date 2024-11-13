@@ -44,8 +44,8 @@ func pre_setup_UI(info_pool: Array):
 func setup_UI(card_pool: Array, card_num:int, is_stoppable: bool, cover_cards: bool):
 	# Setup panel
 	if card_num>7: card_num=7 # Max size
-	rect_size = Vector2(40+card_num*145,rect_size.y)
-	container.rect_size = Vector2(card_num*145*2,container.rect_size.y)
+	rect_size = Vector2(40+card_num*150,rect_size.y)
+	container.rect_size = Vector2(card_num*150*2,container.rect_size.y)
 	rect_position = Vector2((1280-rect_size.x)/2,rect_position.y)
 	# Setup button(s)
 	choose_button.rect_position = Vector2((rect_size.x-choose_button.rect_size.x)/2,choose_button.rect_position.y)

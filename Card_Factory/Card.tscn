@@ -196,4 +196,5 @@ rect_min_size = Vector2( 0, 14 )
 [node name="Cover" type="Panel" parent="."]
 margin_right = 250.0
 margin_bottom = 350.0
+mouse_filter = 1
 custom_styles/panel = SubResource( 7 )

@@ -1,4 +1,4 @@
-[gd_scene load_steps=181 format=2]
+[gd_scene load_steps=182 format=2]
 
 [ext_resource path="res://nano.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Main_Scene/Textures/Utility Buttons/Back.png" type="Texture" id=2]
@@ -43,6 +43,7 @@
 [ext_resource path="res://Main_Scene/Textures/Sliders/Slider.png" type="Texture" id=41]
 [ext_resource path="res://Main_Scene/Textures/Sliders/Slider_Focus.png" type="Texture" id=42]
 [ext_resource path="res://How_to_Play_Scene/Scripts/Color_Choice_Demo.gd" type="Script" id=43]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Scrolly_Button.gd" type="Script" id=44]
 
 [sub_resource type="StyleBoxFlat" id=21]
 bg_color = Color( 0.784314, 0.784314, 0.784314, 1 )
@@ -3014,6 +3015,7 @@ custom_styles/focus = SubResource( 141 )
 custom_styles/disabled = SubResource( 141 )
 custom_styles/normal = SubResource( 142 )
 text = "Anonymous Player"
+script = ExtResource( 44 )
 
 [node name="Locked_Panel" type="Panel" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
 visible = false
@@ -3158,6 +3160,7 @@ custom_styles/focus = SubResource( 150 )
 custom_styles/disabled = SubResource( 150 )
 custom_styles/normal = SubResource( 151 )
 text = "Change"
+script = ExtResource( 44 )
 
 [node name="Locked_Panel" type="Panel" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
 visible = false

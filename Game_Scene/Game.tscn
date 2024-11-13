@@ -2285,22 +2285,22 @@ bg_color = Color( 1, 0.921569, 0.921569, 0.784314 )
 corner_radius_top_left = 32
 corner_radius_bottom_left = 32
 
-[sub_resource type="StyleBoxEmpty" id=74]
+[sub_resource type="StyleBoxEmpty" id=272]
 
-[sub_resource type="StyleBoxEmpty" id=75]
+[sub_resource type="StyleBoxEmpty" id=273]
 
-[sub_resource type="StyleBoxEmpty" id=76]
+[sub_resource type="StyleBoxEmpty" id=274]
 
-[sub_resource type="StyleBoxEmpty" id=77]
+[sub_resource type="StyleBoxEmpty" id=275]
 
-[sub_resource type="StyleBoxEmpty" id=78]
+[sub_resource type="StyleBoxEmpty" id=276]
 
 [sub_resource type="Theme" id=79]
-VScrollBar/styles/grabber = SubResource( 74 )
-VScrollBar/styles/grabber_highlight = SubResource( 75 )
-VScrollBar/styles/grabber_pressed = SubResource( 76 )
-VScrollBar/styles/scroll = SubResource( 77 )
-VScrollBar/styles/scroll_focus = SubResource( 78 )
+VScrollBar/styles/grabber = SubResource( 272 )
+VScrollBar/styles/grabber_highlight = SubResource( 273 )
+VScrollBar/styles/grabber_pressed = SubResource( 274 )
+VScrollBar/styles/scroll = SubResource( 275 )
+VScrollBar/styles/scroll_focus = SubResource( 276 )
 
 [sub_resource type="StyleBoxFlat" id=66]
 bg_color = Color( 0.137255, 0.137255, 0.137255, 0.784314 )
@@ -5034,7 +5034,6 @@ when moving with this Card."
 autowrap = true
 
 [node name="Piles_UI" type="CanvasLayer" parent="Game_Manager/Card_UI"]
-visible = false
 
 [node name="Red_Pile" type="Panel" parent="Game_Manager/Card_UI/Piles_UI"]
 margin_left = 1280.0
@@ -5056,6 +5055,7 @@ theme = SubResource( 79 )
 margin_right = 250.0
 margin_bottom = 920.0
 rect_min_size = Vector2( 250, 920 )
+custom_constants/separation = 70
 
 [node name="Black_Pile" type="Panel" parent="Game_Manager/Card_UI/Piles_UI"]
 margin_left = 1280.0
@@ -5077,6 +5077,7 @@ theme = SubResource( 79 )
 margin_right = 250.0
 margin_bottom = 920.0
 rect_min_size = Vector2( 250, 920 )
+custom_constants/separation = 70
 
 [node name="Orange_Pile" type="Panel" parent="Game_Manager/Card_UI/Piles_UI"]
 margin_left = -175.0
@@ -5097,6 +5098,7 @@ theme = SubResource( 79 )
 margin_right = 250.0
 margin_bottom = 920.0
 rect_min_size = Vector2( 250, 920 )
+custom_constants/separation = 70
 
 [node name="Effects_UI" type="Control" parent="Game_Manager"]
 visible = false
@@ -5572,7 +5574,7 @@ margin_right = 2000.0
 margin_bottom = 350.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_constants/separation = 20
+custom_constants/separation = 50
 alignment = 1
 
 [node name="Choose_Button" type="Button" parent="Game_Manager/Effects_UI/Card_Selection_Aux"]
@@ -5635,7 +5637,7 @@ margin_right = 2000.0
 margin_bottom = 350.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_constants/separation = 20
+custom_constants/separation = 50
 alignment = 1
 
 [node name="Reaction_Handler" type="Control" parent="Game_Manager"]

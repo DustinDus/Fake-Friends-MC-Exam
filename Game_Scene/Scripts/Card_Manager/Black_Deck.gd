@@ -27,7 +27,7 @@ var sync_n = 0
 func initialize(aux_effs):
 	# Deck
 	#for n in range(0,20):
-	#for n in [43,0,0,0,0,0]:#,49,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]:
+	#for n in [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]:#,49,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]:
 	for n in card_database.DATA.size():
 		# Create a new card from the template
 		var card = card_template.instance()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=80 format=2]
+[gd_scene load_steps=81 format=2]
 
 [ext_resource path="res://Main_Scene/Main.gd" type="Script" id=1]
 [ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Player_Name.gd" type="Script" id=2]
@@ -21,6 +21,7 @@
 [ext_resource path="res://Unlockable_Stuff/Avatars/Anonymous_Player.png" type="Texture" id=19]
 [ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Avatar_List.gd" type="Script" id=20]
 [ext_resource path="res://Unlockable_Stuff/Avatars/Locked_Avatar.png" type="Texture" id=21]
+[ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Scrolly_Button.gd" type="Script" id=22]
 [ext_resource path="res://Main_Scene/Scripts/Utility_Buttons/Touch_Scroll.gd" type="Script" id=23]
 [ext_resource path="res://Main_Scene/Textures/Language Buttons/ItalianButton.png" type="Texture" id=24]
 [ext_resource path="res://Main_Scene/Textures/Language Buttons/EnglishButton.png" type="Texture" id=25]
@@ -747,7 +748,6 @@ valign = 1
 autowrap = true
 
 [node name="Title_List" type="MarginContainer" parent="Utility_Buttons/Settings"]
-visible = false
 margin_left = -352.0
 margin_top = 70.0
 margin_bottom = 650.0
@@ -836,6 +836,7 @@ custom_styles/focus = SubResource( 25 )
 custom_styles/disabled = SubResource( 25 )
 custom_styles/normal = SubResource( 26 )
 text = "Anonymous Player"
+script = ExtResource( 22 )
 
 [node name="Locked_Panel" type="Panel" parent="Utility_Buttons/Settings/Title_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
 visible = false
@@ -981,6 +982,7 @@ custom_styles/focus = SubResource( 25 )
 custom_styles/disabled = SubResource( 25 )
 custom_styles/normal = SubResource( 26 )
 text = "Change"
+script = ExtResource( 22 )
 
 [node name="Locked_Panel" type="Panel" parent="Utility_Buttons/Settings/Avatar_List/Panel/MarginContainer/Panel/MarginContainer/ScrollContainer/MarginContainer/VBoxContainer"]
 visible = false
